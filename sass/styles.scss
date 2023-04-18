@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Caviar Dreams";
+    font-family: "Poppins";
     src        : url("../assets/fonts/Poppins-Regular.ttf");
 }
 
@@ -10,7 +10,7 @@ body {
 
 
 body {
-    font-family: "Futura";
+    font-family: "Poppins";
     font-weight: normal;
     font-style : normal;
     background : #E7E3E0;
@@ -509,7 +509,6 @@ p {
     }
 }
 
-/*===== Rounded Buttons =====*/
 .rounded-buttons ul li {
     display    : inline-block;
     margin-left: 18px;
@@ -764,10 +763,10 @@ p {
     }
 }
 
-/*===========================
-       3.HEADER css 
-===========================*/
-/*===== NAVBAR EIGHT =====*/
+.sidebar-right {
+    display: none;
+}
+
 .container {
     max-width: 100%;
 }
@@ -819,14 +818,18 @@ p {
 
     .navbar-area .navbar-brand img {
         max-width: 100%;
-        height   : 56.95px;
-        top      : -2px;
+        height   : 124px;
+        top      : -30px;
         bottom   : 15px;
         position : relative;
         left     : -10px;
+    }
 
+    .btnSideBar {
+        display: block;
     }
 }
+
 
 .navbar-area .navbar {
     position: relative;
@@ -837,7 +840,8 @@ p {
     visibility        : hidden;
     width             : 30px;
     height            : 2px;
-    background-color  : #DF4F89;
+    background-color  : #FFFFFF;
+    filter            : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin            : 5px 0;
     display           : block;
     position          : relative;
@@ -881,22 +885,14 @@ p {
     }
 
     .navbar-area .navbar .navbar-collapse {
-        position        : absolute;
-        left            : 0px;
-        height          : 301px;
-        top             : 115px;
-        width           : 100%;
-        background-color: rgba(232, 137, 175, 0.34);
-        z-index         : 8;
-        padding         : 10px 16px;
-
+        display: none;
     }
 }
 
 @media (max-width: 767px) {
     .navbar-area .navbar .navbar-toggler .toggler-icon {
         visibility: visible;
-        top       : -8px;
+        top       : -46px;
     }
 
     .navbar-toggler {
@@ -905,17 +901,93 @@ p {
     }
 
     .navbar-area .navbar .navbar-collapse {
-        position        : absolute;
-        margin-top      : 368px;
-        height          : 301px;
-        width           : 108%;
-        margin-left     : -15px;
-        background-color: rgba(232, 137, 175, 0.34);
-        z-index         : 8;
+        display: none;
 
     }
 
+    .sidebar-right {
+        display    : block;
+        position   : fixed;
+        height     : 580px;
+        width      : 109px;
+        padding-top: 80px;
+        left       : 300px;
+        z-index    : 9999;
+        transform  : translateX(100%);
+        transition : all 0.3s ease-out 0s;
+        background : rgba(155, 135, 132, 0.3);
+        box-shadow : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .sidebar-right.open {
+        -webkit-transform: translateX(0);
+        -moz-transform   : translateX(0);
+        -ms-transform    : translateX(0);
+        -o-transform     : translateX(0);
+        transform        : translateX(0);
+    }
+
+    .sidebar-right .sidebar-close {
+        position: absolute;
+        top     : 30px;
+        right   : 80px;
+    }
+
+    .sidebar-right .sidebar-close .close {
+        font-size      : 24px;
+        position       : relative;
+        bottom         : 9px;
+        left           : 49px;
+        background-size: 100%;
+        border-radius  : 8px;
+        color          : transparent;
+    }
 }
+
+
+.sidebar-right .sidebar-close .close:hover {
+    opacity: inherit;
+}
+
+
+.sidebar-right .sidebar-content .sidebar-menu {
+    margin-top: 40px;
+}
+
+.sidebar-right .sidebar-content .sidebar-menu ul li a {
+    font-family       : 'Poppins';
+    font-style        : normal;
+    font-weight       : 400;
+    font-size         : 12px;
+    line-height       : 18px;
+    display           : flex;
+    align-items       : center;
+    text-align        : center;
+    padding-bottom    : 22px;
+    justify-content   : center;
+    color             : #FFFFFF;
+    text-shadow       : 0px 4px 5px rgba(0, 0, 0, 0.4);
+    text-transform    : uppercase;
+    position          : relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition        : all 0.3s ease-out 0s;
+}
+
+
+.overlay-right {
+    position: fixed;
+    top     : 0;
+    left    : 0;
+    width   : 100%;
+    height  : 100%;
+    display : none;
+    z-index : 999;
+}
+
+.overlay-right.open {
+    display: block;
+}
+
 
 .navbar-area .navbar .navbar-nav .nav-item a {
     display       : none;
@@ -1093,7 +1165,7 @@ p {
 
     .carousel_mobile {
         display: block;
-        height : 377px;
+        height : 584px;
     }
 
     .carousel_full {
@@ -1717,9 +1789,7 @@ p {
     width: 100%;
 }
 
-/*===========================
-         4.ABOUT css 
-===========================*/
+
 .about-area {
     position      : relative;
     padding-top   : 65px;
@@ -1762,105 +1832,52 @@ p {
     }
 }
 
+.bold {
+    font-weight: bold;
+}
 
 @media (max-width: 767px) {
     .about-area {
-        background-image: url('../assets/images/Vector\ 2\ \(1\).png'), url('../assets/images/Vector\ 2.png'), url('../assets/images/Vector\ 3.png');
-        background-size : 100% 20%, contain;
-        background-position: top,
-            1px 640px, 0px 1306px;
-        background-repeat: no-repeat;
-        padding-top      : 50px;
-        padding-bottom   : 20px;
-
-        .row {
-            margin: 0;
+        .section-title {
+            position     : absolute;
+            width        : 349px;
+            height       : 349px;
+            background   : #9B9B84;
+            box-shadow   : 0px 4px 15px rgba(0, 0, 0, 0.31);
+            border-radius: 40px
         }
     }
 
-    .section-title .title {
-        font-size  : 30px;
-        line-height: 35px;
-    }
-
-    .section-name {
-        display : block;
-        position: relative;
-        left    : 135px;
-        top     : auto;
-        bottom  : 25px;
-
-        p {
-            font-family: 'Croissant One';
-            font-style : normal;
-            font-weight: 400;
-            font-size  : 40px;
-            line-height: 57px;
-            display    : flex;
-            align-items: center;
-            text-align : center;
-            color      : #DF4F89;
-            position   : absolute;
-            left       : 164px;
-            bottom     : -5px;
-        }
-
-
-    }
-
-    .about-area .section-title p {
-        font-family: 'Caviar Dreams';
-        font-style : normal;
-        font-weight: 400;
-        font-size  : 16px;
-        width      : 383px;
-        height     : 194px;
-        line-height: 19px;
-        text-align : center;
-        color      : #FFFFFF;
-    }
-
-    .imagesGroup {
-        display        : flex;
-        overflow       : scroll;
-        flex-wrap      : nowrap;
-        justify-content: space-between;
-
-        .imageInn {
-            width      : 319px;
-            height     : 479px;
-            align-items: center;
-        }
-
-        .imageBox {
-            margin-bottom: 29px;
-        }
-    }
-
-    .btnInfo {
-        margin     : 10px;
-        width      : 219px;
+    .about-area .section-title .sectionAbout {
         position   : absolute;
-        bottom     : 684px;
-        left       : 89px;
-        height     : 38px;
-        font-family: 'Futura';
+        left       : 116px;
+        width      : 223px;
+        height     : 65px;
+        font-family: 'Poppins';
         font-style : normal;
-        font-weight: 500;
-        font-size  : 14px;
-        line-height: 35px;
+        font-weight: 700;
+        font-size  : 20px;
+        line-height: 30px;
+        display    : flex;
+        align-items: center;
         text-align : center;
-        color      : #FFFFFF;
+        color      : #E7E3E0;
     }
 
-    .btnInfo {
-        padding : 0;
-        width   : 351px;
-        height  : 62px;
-        position: initial;
-        margin  : auto;
-
+    .about-area .section-title .sectionText {
+        position   : absolute;
+        width      : 251px;
+        height     : 168px;
+        left       : 50px;
+        font-family: 'Poppins';
+        font-style : normal;
+        font-weight: 300;
+        font-size  : 14px;
+        line-height: 21px;
+        text-align : center;
+        color      : #E7E3E0;
     }
+
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1897,7 +1914,6 @@ p {
 }
 
 .portfolio-content {
-
     .title {
         position   : absolute;
         width      : 160px;
@@ -1948,34 +1964,29 @@ p {
 
 @media (max-width: 767px) {
     .portfolio-area {
-        background-image     : url('../assets/images/Coming\ soon\ Mobile.webp');
-        background-blend-mode: normal;
-        padding-top          : 150px;
-        height               : 402px;
+        background: none;
     }
 
     .portfolio-content {
-        .sub-title {
-            font-family: 'Caviar Dreams';
+        .title {
+            position   : absolute;
+            font-family: 'Poppins';
             font-style : normal;
+            left       : 175px;
+            top        : -130px;
             font-weight: 700;
             font-size  : 20px;
-            line-height: 25px;
+            line-height: 30px;
+            display    : flex;
+            align-items: center;
             text-align : center;
-            color      : #FFFFFF;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color      : #9B8492;
         }
+    }
 
-        .title {
-            font-family: 'Futura';
-            font-style : normal;
-            font-weight: 500;
-            font-size  : 32px;
-            line-height: 42px;
-            padding-top: 25px;
-            text-align : center;
-            color      : #FFFFFF;
-        }
+    .imagesGroup {
+        display  : flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -2087,33 +2098,23 @@ p {
 
 @media (max-width: 767px) {
     .services-area {
-        background-image     : url('../assets/images/Coming\ soon\ Mobile.webp');
-        background-blend-mode: normal;
-        padding-top          : 150px;
-        height               : 402px;
+        margin-top: 880px;
+        background: none;
     }
 
     .services-content {
-        .sub-title {
-            font-family: 'Caviar Dreams';
+
+        .title {
+            font-family: 'Poppins';
             font-style : normal;
             font-weight: 700;
             font-size  : 20px;
-            line-height: 25px;
+            line-height: 30px;
+            display    : flex;
+            align-items: center;
             text-align : center;
-            color      : #FFFFFF;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .title {
-            font-family: 'Futura';
-            font-style : normal;
-            font-weight: 500;
-            font-size  : 32px;
-            line-height: 42px;
-            padding-top: 25px;
-            text-align : center;
-            color      : #FFFFFF;
+            color: #A6856A;left: 175px;
+top : -130px;
         }
     }
 }
@@ -2240,7 +2241,7 @@ p {
     .news-area {
         background-image     : url('../assets/images/Coming\ soon\ Mobile.webp');
         background-blend-mode: normal;
-        padding-top          : 150px;
+        margin-top           : 1263px;
         height               : 402px;
     }
 
@@ -2606,19 +2607,19 @@ p {
 }
 
 .btnContact {
-    width            : 356px;
-    height           : 83px;
-    padding          : 25px;
-    font-family      : 'Poppins';
-    font-style       : normal;
-    font-weight      : 700;
-    font-size        : 24px;
-    line-height      : 36px;
-    color            : #E7E3E0;
-    background       : #A6856A;
-    box-shadow       : 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius    : 40px;
-    border-radius    : 60px;
+    width        : 356px;
+    height       : 83px;
+    padding      : 25px;
+    font-family  : 'Poppins';
+    font-style   : normal;
+    font-weight  : 700;
+    font-size    : 24px;
+    line-height  : 36px;
+    color        : #E7E3E0;
+    background   : #A6856A;
+    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    border-radius: 60px;
 }
 
 .btnContact:hover {
@@ -2765,7 +2766,7 @@ p {
 }
 
 .footer-img {
-    height  : 200px;
+    height: 200px;
 }
 
 @media (max-width: 767px) {

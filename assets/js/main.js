@@ -18,6 +18,10 @@ $(function () {
     }
   });
 
+  $('nav li.bg').on('click touchstart', function () {
+    return true;
+  });
+
   //===== close navbar-collapse when a  clicked
 
   $('.navbar-nav a').on('click', function () {
@@ -25,16 +29,6 @@ $(function () {
   });
 
   //===== Mobile Menu
-
-  $('.navbar-toggler').on('click', function () {
-    $(this).toggleClass('active');
-  });
-
-  $('.navbar-nav a').on('click', function () {
-    $('.navbar-toggler').removeClass('active');
-  });
-
-  //===== Section Menu Active
 
   var scrollLink = $('.page-scroll');
   // Active link switching
@@ -70,11 +64,20 @@ $(function () {
     }
   });
 
-  var action = 1;
+  $('[href="#side-menu-right"], .overlay-right').on(
+    'click',
+    function (event) {
+      $('.sidebar-right, .overlay-right').addClass('open');
+    }
+  );
 
+  $('[href="#close"], .overlay-right').on('click', function (event) {
+    $('.sidebar-right, .overlay-right').removeClass('open');
+  });
+
+  var action = 1;
   let p = document.getElementById('btnMenu');
   p.onclick = viewSomething;
-
   function viewSomething() {
     if (action == 1) {
       document.getElementById('sobreurxit').style.display = 'none';
