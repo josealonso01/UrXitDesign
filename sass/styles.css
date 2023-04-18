@@ -1369,45 +1369,22 @@ p {
 ===========================*/
 .about-area {
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 79px;
-  animation: animate__fadeInDown;
-  animation-duration: 2s;
-  background-image: url("../assets/images/Vector 2 (1).png");
-  background-position: initial;
-  background-size: 100% 750px;
-  background-repeat: no-repeat; }
-
-.imagesGroup {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-top: 48px;
-  justify-content: center; }
-  .imagesGroup img {
-    padding: 10px; }
-
-.imgBox {
-  position: relative;
-  float: left; }
-
-.imgBox .hoverImage {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none; }
-
-.imgBox:hover .hoverImage {
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
-  background: transparent;
-  display: block; }
+  padding-top: 65px;
+  padding-bottom: 421px; }
 
 .about-area .section-title {
   position: absolute;
   width: 1340px;
   height: 308px;
   background: #9B9B84;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.31); }
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.31);
+  border-radius: 40px; }
   .about-area .section-title .sectionAbout {
+    position: absolute;
+    width: 200px;
+    height: 54px;
+    left: 550px;
+    top: 35px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -1415,8 +1392,11 @@ p {
     line-height: 54px;
     color: #FFFFFF; }
   .about-area .section-title .sectionText {
-    font-family: 'Poppins';
+    position: absolute;
     width: 685px;
+    left: 320px;
+    top: 125px;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -1575,36 +1555,26 @@ p {
     padding-top: 120px; } }
 
 .portfolio-area {
-  padding-top: 90px;
-  width: 100%;
-  height: 281px;
-  text-align: center;
-  padding-bottom: 150px;
-  background: rgba(232, 137, 175, 0.6);
-  background-image: url("../assets/images/ori 37 1_10_11zon.webp");
-  background-position: center, right bottom;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover;
-  background-blend-mode: soft-light; }
-
-.portfolio-content .sub-title {
-  font-family: 'Caviar Dreams';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 37px;
-  text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  margin-top: 75px;
+  padding-bottom: 90px;
+  position: absolute;
+  width: 1440px;
+  height: 127px;
+  left: 0px;
+  background: #9B8492; }
 
 .portfolio-content .title {
-  font-family: 'Futura';
+  position: absolute;
+  width: 160px;
+  height: 54px;
+  left: 290px;
+  top: -75px;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 53px;
-  text-align: center;
-  color: #FFFFFF; }
+  font-size: 36px;
+  line-height: 54px;
+  color: #9B8492; }
 
 @media (max-width: 767px) {
   .portfolio-area {
@@ -1661,7 +1631,7 @@ p {
 ===========================*/
 .pricing-area {
   position: relative;
-  margin-top: 117px;
+  margin-top: 500px;
   padding-top: 560px;
   animation: animate__fadeInDown;
   animation-duration: 2s;
@@ -1669,9 +1639,6 @@ p {
   background-position: 1px 103px, 1px 1133px;
   background-size: 100%;
   background-repeat: no-repeat; }
-
-.logoPricing {
-  visibility: hidden; }
 
 .pricing-title {
   margin-left: 70px;
