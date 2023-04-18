@@ -78,18 +78,20 @@ $(function () {
 
   function viewSomething() {
     if (action == 1) {
-      document.getElementById('about').style.display = 'none';
-      document.getElementById('work').style.display = 'none';
-      document.getElementById('services').style.display = 'none';
-      document.getElementById('news').style.display = 'none';
-      document.getElementById('staff').style.display = 'none';
+      document.getElementById('sobreurxit').style.display = 'none';
+      document.getElementById('trabajo').style.display = 'none';
+      document.getElementById('servicios').style.display = 'none';
+      document.getElementById('novedades').style.display = 'none';
+      document.getElementById('gente').style.display = 'none';
+       document.getElementById('contacto').style.display = 'none';
       action = 2;
     } else {
-      document.getElementById('about').style.display = 'block';
-      document.getElementById('work').style.display = 'block';
-      document.getElementById('services').style.display = 'block';
-      document.getElementById('news').style.display = 'block';
-      document.getElementById('staff').style.display = 'block';
+      document.getElementById('sobreurxit').style.display = 'block';
+      document.getElementById('trabajo').style.display = 'block';
+      document.getElementById('servicios').style.display = 'block';
+      document.getElementById('novedades').style.display = 'block';
+      document.getElementById('gente').style.display = 'block';
+       document.getElementById('contacto').style.display = 'none';
       action = 1;
     }
   }

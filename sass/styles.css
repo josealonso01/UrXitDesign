@@ -1383,7 +1383,7 @@ p {
     position: absolute;
     width: 200px;
     height: 54px;
-    left: 550px;
+    left: 565px;
     top: 35px;
     font-family: 'Poppins';
     font-style: normal;
@@ -1394,7 +1394,7 @@ p {
   .about-area .section-title .sectionText {
     position: absolute;
     width: 685px;
-    left: 320px;
+    left: 335px;
     top: 125px;
     font-family: 'Poppins';
     font-style: normal;
@@ -1475,66 +1475,7 @@ p {
     width: 351px;
     height: 62px;
     position: initial;
-    margin: auto; }
-  .news .row {
-    display: inline-block; }
-  .newsSecondCol a {
-    position: relative;
-    left: -15px; }
-  .contentModal {
-    width: 394px;
-    height: 478px;
-    margin: auto;
-    left: auto;
-    top: 40px; }
-  .textMasInfo {
-    font-family: 'Caviar Dreams';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    width: 342px;
-    height: 312px;
-    left: 26px;
-    top: 55px; }
-  .newsTitle {
-    padding: 0%;
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #DF4F89;
-    margin: auto;
-    position: relative;
-    top: -58px; }
-  .newsSubtitle {
-    padding: 0%;
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: #4B4845;
-    margin: auto;
-    position: relative;
-    top: -58px; }
-  .newsThanks {
-    padding: 0%;
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #DF4F89;
-    margin: auto;
-    position: relative;
-    top: -58px; } }
+    margin: auto; } }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .about-area .section-title p {
@@ -1555,11 +1496,10 @@ p {
     padding-top: 120px; } }
 
 .portfolio-area {
-  margin-top: 75px;
+  margin-top: 150px;
   padding-bottom: 90px;
   position: absolute;
-  width: 1440px;
-  height: 127px;
+  width: 100%;
   left: 0px;
   background: #9B8492; }
 
@@ -1567,14 +1507,39 @@ p {
   position: absolute;
   width: 160px;
   height: 54px;
-  left: 290px;
-  top: -75px;
+  left: 295px;
+  top: -145px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 54px;
   color: #9B8492; }
+
+.imagesGroup {
+  display: flex;
+  position: absolute;
+  top: -50px;
+  flex-wrap: nowrap;
+  justify-content: center; }
+  .imagesGroup img {
+    padding: 10px;
+    height: 200px; }
+
+.imgBox {
+  position: relative;
+  float: left; }
+
+.imgBox .hoverImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none; }
+
+.imgBox:hover .hoverImage {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+  background: transparent;
+  display: block; }
 
 @media (max-width: 767px) {
   .portfolio-area {
@@ -1626,56 +1591,220 @@ p {
     text-align: center;
     color: #FFFFFF; } }
 
-/*===========================
-      16.PRICING css 
-===========================*/
-.pricing-area {
-  position: relative;
-  margin-top: 500px;
-  padding-top: 560px;
-  animation: animate__fadeInDown;
-  animation-duration: 2s;
-  background-image: url("../assets/images/Vector 2.png"), url("../assets/images/Vector 1.png");
-  background-position: 1px 103px, 1px 1133px;
-  background-size: 100%;
-  background-repeat: no-repeat; }
+.services-area {
+  margin-top: 524px;
+  margin-bottom: 200px;
+  padding-bottom: 90px;
+  position: absolute;
+  width: 100%;
+  left: 0px; }
 
-.pricing-title {
-  margin-left: 70px;
-  margin-top: -590px;
-  height: 48px;
-  font-family: 'Futura';
+.services-content .title {
+  position: absolute;
+  width: 160px;
+  height: 54px;
+  left: 295px;
+  top: -145px;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
-  line-height: 48px;
-  text-align: center;
-  color: #3E3B39; }
+  line-height: 54px;
+  color: #A6856A; }
 
-.pricing-trustImg a img {
+.imagesGroupServices {
+  display: flex;
+  position: absolute;
+  top: -50px;
+  flex-wrap: nowrap;
+  justify-content: center; }
+  .imagesGroupServices img {
+    position: absolute;
+    top: 55px;
+    left: 35px;
+    height: auto;
+    width: 140px; }
+
+.imgBoxServices {
+  position: relative;
+  margin-inline: 17px;
+  float: left;
+  box-sizing: border-box;
+  width: 215px;
+  height: 251px;
+  left: -11px;
+  border: 3px solid #A6856A;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 30px; }
+
+.imgBoxServices .hoverImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none; }
+
+.imgBoxServices:hover .hoverImage {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+  background: transparent;
+  display: block; }
+
+@media (max-width: 767px) {
+  .services-area {
+    background-image: url("../assets/images/Coming soon Mobile.webp");
+    background-blend-mode: normal;
+    padding-top: 150px;
+    height: 402px; }
+  .services-content .sub-title {
+    font-family: 'Caviar Dreams';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .services-content .title {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    padding-top: 25px;
+    text-align: center;
+    color: #FFFFFF; } }
+
+@media only screen and (min-width: 576px) and (max-width: 769px) {
+  .services-area {
+    background-image: url("../assets/images/Coming soon Mobile.webp");
+    background-blend-mode: normal;
+    padding-top: 150px;
+    height: 402px; }
+  .services-content .sub-title {
+    font-family: 'Caviar Dreams';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .services-content .title {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    padding-top: 25px;
+    text-align: center;
+    color: #FFFFFF; } }
+
+.news-area {
+  margin-top: 900px;
+  width: 100%;
+  height: 797px;
+  left: 0px;
+  top: 2306px;
+  background: #9FA292; }
+
+.newsSecondCol a {
+  position: relative;
+  left: -15px; }
+
+.sectionTitle {
+  position: absolute;
+  width: 209px;
+  height: 54px;
+  left: 650px;
+  top: 2225px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF; }
+
+.news .row {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1225px;
+  height: 542px;
+  left: 130px;
+  top: 2350px;
+  border: 1px solid #FFFFFF;
+  border-radius: 48px; }
+
+.newsTitle {
+  position: absolute;
+  width: 449px;
+  height: 54px;
+  left: 272px;
+  top: 120px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF; }
+
+.newsSubtitle {
+  position: absolute;
+  width: 597px;
+  height: 144px;
+  left: 155px;
+  top: 220px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF; }
+
+@media (max-width: 767px) {
+  .news-area {
+    background-image: url("../assets/images/Coming soon Mobile.webp");
+    background-blend-mode: normal;
+    padding-top: 150px;
+    height: 402px; } }
+
+@media only screen and (min-width: 576px) and (max-width: 769px) {
+  .news-area {
+    background-image: url("../assets/images/Coming soon Mobile.webp");
+    background-blend-mode: normal;
+    padding-top: 150px;
+    height: 402px; } }
+
+.pricing-area {
+  padding-top: 110px; }
+
+.pricing-trustImg img {
   display: inline-block;
   margin: 0;
-  padding-inline: 25px; }
-
-.pricing-subtitle {
-  color: #4B4845;
-  height: 48px;
-  font-family: 'Futura';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 48px;
-  margin-bottom: 117px; }
+  padding-inline: 30px; }
 
 .pricing-trust {
-  padding-top: 200px;
-  height: 48px;
-  font-family: 'Futura';
+  position: absolute;
+  width: 84px;
+  height: 54px;
+  left: 678px;
+  top: 3030px;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
-  line-height: 48px;
-  color: #3E3B39; }
+  line-height: 54px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #9B8492; }
 
 .trust-img {
   padding-top: 50px; }
@@ -2107,7 +2236,7 @@ p {
   height: 45px;
   line-height: 45px;
   border-radius: 50%;
-  background-color: #fe88b7;
+  background-color: #9FA292;
   text-align: center;
   z-index: 99;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -2118,4 +2247,4 @@ p {
 
 .back-to-top:hover {
   color: #121212;
-  background-color: #DF4F89; }
+  background-color: #A6856A; }
