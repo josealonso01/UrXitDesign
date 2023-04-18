@@ -2260,19 +2260,26 @@ p {
 }
 
 .pricing-area {
-    padding-top: 110px;
+    background-image : url('../assets/images/Sabrina\ ⁷\ \(@sabrinafelizitas\)\ posted\ on\ Instagram\ •\ Oct\ 15\,\ 2019\ at\ 2_03pm\ UTC\ 1.png');
+    background-repeat: no-repeat;
+    background-size  : 100% 100%;
+}
+
+.trust-img {
+    padding-top: 200px;
 }
 
 
 
-.pricing-trustImg {
-    img {
-        display       : inline-block;
-        margin        : 0;
-        padding-inline: 30px;
-    }
-
+.trust-img-div {
+    display              : grid;
+    align-items          : center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap           : 5px;
+    row-gap              : 65px;
+    justify-items        : center;
 }
+
 
 .pricing-trust {
     position   : absolute;
@@ -2292,98 +2299,28 @@ p {
 }
 
 
-.trust-img {
-    padding-top: 50px;
-
+.staffNames {
+    font-family: 'Poppins';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 32px;
+    line-height: 48px;
+    align-items: center;
+    text-align : center;
+    color      : #9B8492;
 }
 
-.brandNames {
-    padding-top         : 45px;
-    font-family         : 'Futura';
-    font-style          : normal;
-    font-weight         : 500;
-    font-size           : 20px;
-    line-height         : 27px;
-    text-decoration-line: underline;
-    text-align          : revert;
-    color               : #4B4845;
-    margin-inline       : -5px;
+.staffService {
+    font-family: 'Poppins';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 24px;
+    line-height: 36px;
+    align-items: center;
+    text-align : center;
+    color      : #9B8492;
 }
 
-.discount {
-    display: none;
-}
-
-.maskgroup {
-    margin-top: 50px;
-
-    img {
-        padding: 15px;
-    }
-}
-
-.descuentos {
-    display   : flex;
-    overflow-x: scroll;
-
-    a {
-        margin-inline: 20px;
-    }
-
-    .imageInn {
-        width      : 148px;
-        height     : 148px;
-        align-items: center;
-    }
-
-    .imageBox {
-        margin-bottom: 29px;
-    }
-}
-
-.imageBox {
-    position: relative;
-    float   : left;
-}
-
-.mobileVersion {
-    display: none;
-}
-
-.imageBox .hoverImg {
-    position: absolute;
-    left    : 0;
-    top     : 0;
-    display : none;
-}
-
-.imageBox:hover .hoverImg {
-    background   : #DF4F89;
-    border-radius: 90px;
-    border       : 1px solid #000000;
-    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display      : block;
-}
-
-
-
-
-@media only screen and (min-width: 1000px) and (max-width: 1440px) {
-    .pricing-trustImg {
-        a {
-            img {
-                display       : inline-block;
-                margin        : 0;
-                padding-inline: 9px;
-            }
-        }
-    }
-
-    .pricing-area {
-        background-position: 1px 103px,
-            1px 1233px;
-    }
-}
 
 
 
