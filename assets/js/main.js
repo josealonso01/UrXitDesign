@@ -42,8 +42,7 @@ $(function () {
     var scrollbarLocation = $(this).scrollTop();
 
     scrollLink.each(function () {
-      var sectionOffset = $(this.hash).offset().top - 73;
-
+      var sectionOffset = $(this.hash).offset() - 73;
       if (sectionOffset <= scrollbarLocation) {
         $(this).parent().addClass('active');
         $(this).parent().siblings().removeClass('active');
@@ -83,7 +82,7 @@ $(function () {
       document.getElementById('servicios').style.display = 'none';
       document.getElementById('novedades').style.display = 'none';
       document.getElementById('gente').style.display = 'none';
-       document.getElementById('contacto').style.display = 'none';
+      document.getElementById('contacto').style.display = 'none';
       action = 2;
     } else {
       document.getElementById('sobreurxit').style.display = 'block';
@@ -91,11 +90,10 @@ $(function () {
       document.getElementById('servicios').style.display = 'block';
       document.getElementById('novedades').style.display = 'block';
       document.getElementById('gente').style.display = 'block';
-       document.getElementById('contacto').style.display = 'none';
+      document.getElementById('contacto').style.display = 'block';
       action = 1;
     }
   }
-
 
   //===== Isotope Project 3
 

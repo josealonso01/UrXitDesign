@@ -769,30 +769,28 @@ p {
 ===========================*/
 /*===== NAVBAR EIGHT =====*/
 .container {
-    max-width: 1440px;
+    max-width: 100%;
 }
 
 .navbar-area {
     background        : rgba(217, 217, 217, 0.01);
+    -webkit-box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.1);
     box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.19);
     padding           : 10px 0;
     position          : absolute;
-    height            : 194px;
+    height            : 119px;
     top               : 0;
     left              : 0;
     width             : 100%;
     z-index           : 999;
     -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition   : all 0.3s ease-out 0s;
-    -ms-transition    : all 0.3s ease-out 0s;
-    -o-transition     : all 0.3s ease-out 0s;
     transition        : all 0.3s ease-out 0s;
 }
 
 .navbar-area .navbar-brand img {
     max-width: 150px;
     position : relative;
-    top      : 13px;
+    top      : -13px;
 }
 
 
@@ -925,7 +923,7 @@ p {
     font-style    : normal;
     font-weight   : 500;
     position      : relative;
-    top           : 13px;
+    top           : -20px;
     font-size     : 14px;
     line-height   : 24px;
     padding-inline: 14px;
@@ -1291,7 +1289,7 @@ p {
 
 .navbar-area .navbar .navbar-btn .menu-bar {
     font-size         : 32px;
-    top               : 20px;
+    top               : -13px;
     position          : relative;
     overflow          : hidden;
     color             : #FFFFFF;
@@ -2583,82 +2581,71 @@ p {
       20.CONTACT css 
 ===========================*/
 .contact-area {
-    padding-bottom: 100px;
+    margin-top   : 160px;
+    margin-bottom: 102px;
+    box-sizing   : border-box;
+    background   : #A6856A;
+    border       : 1px solid #A6856A;
+    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    width        : 1160px;
+    height       : 440px;
+    position     : relative;
+    left         : 130px;
+}
+
+.contactBox {
+    position     : relative;
+    width        : 1031px;
+    height       : 391px;
+    top          : 25px;
+    left         : 65px;
+    background   : #E7E3E0;
+    border       : 1px solid #A6856A;
+    border-radius: 40px;
 }
 
 .btnContact {
-    width       : 553px;
-    height      : 97px;
-    padding     : 10px;
-    font-family : 'Futura';
-    font-style  : normal;
-    font-weight : 500;
-    font-size   : 24px;
-    line-height : 70px;
-    text-align  : center;
-    color       : #FFFFFF;
-    background  : #FE88B7;
-    border-style: none;
-    box-shadow  : 0px 4px 8px rgba(0, 0, 0, 0.25),
-        inset 0px 4px 40px #FE88B7;
+    width            : 356px;
+    height           : 83px;
+    padding          : 25px;
+    font-family      : 'Poppins';
+    font-style       : normal;
+    font-weight      : 700;
+    font-size        : 24px;
+    line-height      : 36px;
+    color            : #E7E3E0;
+    background       : #A6856A;
+    box-shadow       : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius    : 40px;
     border-radius    : 60px;
     margin-inline-end: 50px;
 }
 
 .btnContact:hover {
-    background : #EB4588;
     box-shadow : 0px 4px 8px rgba(0, 0, 0, 0.25);
-    font-family: 'Futura';
     font-weight: 700;
     color      : #FFFFFF;
 }
 
 
 .contactText {
-    padding-top   : 170px;
-    padding-bottom: 39px;
-    font-family   : 'Futura';
-    font-style    : normal;
-    font-weight   : 500;
-    font-size     : 36px;
-    line-height   : 48px;
-    text-align    : center;
-    color         : #3E3B39;
-    margin-inline : 130px;
+    font-family: 'Poppins';
+    font-style : normal;
+    font-weight: 300;
+    font-size  : 24px;
+    line-height: 36px;
+    color      : #A6856A;
 }
 
-.contactTextOri {
-    padding-top  : 0px;
-    font-family  : 'Futura';
-    font-style   : normal;
-    font-weight  : 500;
-    font-size    : 36px;
-    line-height  : 48px;
-    text-align   : center;
-    color        : #3E3B39;
-    margin-bottom: 140px;
-}
-
-.contactTextRedes {
-    padding-top   : 70px;
-    padding-bottom: 39px;
-    font-family   : 'Futura';
-    font-style    : normal;
-    font-weight   : 500;
-    font-size     : 36px;
-    line-height   : 48px;
-    text-align    : center;
-    color         : #3E3B39;
-}
-
-.redes-area {
-    .icons {
-        margin: 25px;
-    }
-}
-
-.redesIcons {
-    padding-bottom: 40px;
+.contactTitle {
+    padding-top: 60px;
+    font-family: 'Poppins';
+    font-style : normal;
+    font-weight: 600;
+    font-size  : 36px;
+    line-height: 54px;
+    color      : #A6856A;
 }
 
 @media (max-width: 767px) {
@@ -2777,45 +2764,30 @@ p {
 /*===========================
     22.HEADER css 
 ===========================*/
-.footer-area {
-    background-image   : url('../assets/images/Vector\ 1.png');
-    background-size    : 100% 153%;
-    background-position: 1px -239px;
-    background-repeat  : no-repeat;
-}
 
-.footer-area .footer-copyright {
-    margin        : auto;
-    padding-top   : 13px;
-    padding-bottom: 23px;
-    text-align    : center;
-}
 
-.footer-area .footer-copyright .copyright .text {
-    color     : #121212;
-    text-align: center;
-
+.footer-copyright {
+    background: rgba(155, 132, 146, 0.47);
+    height    : 233px;
 }
 
 @media (max-width: 767px) {
-    .footer-area {
-        background-image   : url('../assets/images/Vector\ 4.png');
-        background-repeat  : no-repeat;
-        background-size    : 100% 287px;
-        background-position: 1px -105px;
+    .footer-copyright {
+        background: rgba(155, 132, 146, 0.47);
+        height    : 233px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 769px) {
-    .footer-area {
-        background-image: none;
+    .footer-copyright {
+        background: rgba(155, 132, 146, 0.47);
+        height    : 233px;
     }
 }
 
 
 /*===== BACK TO TOP =====*/
 .back-to-top {
-    display           : none;
     font-size         : 20px;
     color             : #121212;
     position          : fixed;
