@@ -36,7 +36,7 @@ $(function () {
     var scrollbarLocation = $(this).scrollTop();
 
     scrollLink.each(function () {
-      var sectionOffset = $(this.hash).offset().top - 73;
+      var sectionOffset = $(this.hash).offset().top - 5;
       if (sectionOffset <= scrollbarLocation) {
         $(this).parent().addClass('active');
         $(this).parent().siblings().removeClass('active');
@@ -80,6 +80,7 @@ $(function () {
   p.onclick = viewSomething;
   function viewSomething() {
     if (action == 1) {
+      document.getElementById('h').style.display = 'none';
       document.getElementById('sobreurxit').style.display = 'none';
       document.getElementById('trabajo').style.display = 'none';
       document.getElementById('servicios').style.display = 'none';
@@ -88,6 +89,7 @@ $(function () {
       document.getElementById('contacto').style.display = 'none';
       action = 2;
     } else {
+      document.getElementById('h').style.display = 'block';
       document.getElementById('sobreurxit').style.display = 'block';
       document.getElementById('trabajo').style.display = 'block';
       document.getElementById('servicios').style.display = 'block';

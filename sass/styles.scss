@@ -1500,10 +1500,20 @@ p {
 }
 
 .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
-    font-size  : 44px;
-    font-weight: 700;
-    color      : #fff;
-    line-height: 55px;
+    font-family    : 'Poppins';
+    font-style     : normal;
+    font-weight    : 500;
+    font-size      : 48px;
+    line-height    : 72px;
+    display        : flex;
+    text-transform : uppercase;
+    width          : 942px;
+    color          : #FFFFFF;
+    text-shadow    : 0px 4px 20px rgba(0, 0, 0, 0.4);
+    justify-content: flex-end;
+    position       : relative;
+    left           : -130px;
+    top            : 85px;
 }
 
 @media (max-width: 767px) {
@@ -1792,14 +1802,14 @@ p {
 
 .about-area {
     position      : relative;
-    padding-top   : 65px;
-    padding-bottom: 421px;
+    padding-top   : 190px;
+    padding-bottom: 1000px;
 }
 
 .about-area .section-title {
     position     : absolute;
-    width        : 1340px;
-    height       : 308px;
+    width        : 1229px;
+    height       : 813px;
     background   : #9B9B84;
     box-shadow   : 0px 4px 15px rgba(0, 0, 0, 0.31);
     border-radius: 40px;
@@ -1904,14 +1914,15 @@ p {
 
 
 .portfolio-area {
-    margin-top    : 150px;
-    padding-bottom: 90px;
-    position      : absolute;
-    width         : 100%;
-    left          : 0px;
-    background    : #9B8492;
-
+    margin-top: 100px;
+    position  : absolute;
+    width     : 100%;
+    left      : 0px;
+    height    : 127px;
+    background: #9B8492;
 }
+
+
 
 .portfolio-content {
     .title {
@@ -1919,7 +1930,7 @@ p {
         width      : 160px;
         height     : 54px;
         left       : 295px;
-        top        : -145px;
+        top        : -200px;
         font-family: 'Poppins';
         font-style : normal;
         font-weight: 500;
@@ -1933,33 +1944,33 @@ p {
 .imagesGroup {
     display        : flex;
     position       : absolute;
-    top            : -50px;
+    top            : -100px;
+    left           : -200px;
     flex-wrap      : nowrap;
     justify-content: center;
 
     img {
         padding: 10px;
-        height : 200px;
     }
 }
 
 .imgBox {
     position: relative;
     float   : left;
+    width   : 394px;
 }
 
 .imgBox .hoverImage {
     position: absolute;
-    left    : 0;
+    left    : -10px;
     top     : 0;
     display : none;
+    width   : 419px;
 }
 
 
 .imgBox:hover .hoverImage {
-    filter    : drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
-    background: transparent;
-    display   : block;
+    display: block;
 }
 
 @media (max-width: 767px) {
@@ -1990,48 +2001,12 @@ p {
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 769px) {
-    .portfolio-area {
-        background-image     : url('../assets/images/Coming\ soon\ Mobile.webp');
-        background-blend-mode: normal;
-        padding-top          : 150px;
-        height               : 402px;
-    }
-
-    .portfolio-content {
-        .sub-title {
-            font-family: 'Caviar Dreams';
-            font-style : normal;
-            font-weight: 700;
-            font-size  : 20px;
-            line-height: 25px;
-            text-align : center;
-            color      : #FFFFFF;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .title {
-            font-family: 'Futura';
-            font-style : normal;
-            font-weight: 500;
-            font-size  : 32px;
-            line-height: 42px;
-            padding-top: 25px;
-            text-align : center;
-
-            color: #FFFFFF;
-        }
-    }
-}
-
 
 .services-area {
-    margin-top    : 524px;
-    margin-bottom : 200px;
-    padding-bottom: 90px;
-    position      : absolute;
-    width         : 100%;
-    left          : 0px;
+    margin-top: 525px;
+    position  : absolute;
+    width     : 100%;
+    left      : 0px;
 
 }
 
@@ -2054,56 +2029,100 @@ p {
 }
 
 .imagesGroupServices {
-    display        : flex;
-    position       : absolute;
-    top            : -50px;
-    flex-wrap      : nowrap;
-    justify-content: center;
+    display      : flex;
+    position     : absolute;
+    top          : -80px;
+    left         : -279px;
+    flex-wrap    : nowrap;
+    background   : rgba(166, 133, 106, 0.7);
+    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    width        : 1323px;
+    height       : 487px;
 
     img {
-        position: absolute;
-        top     : 55px;
-        left    : 35px;
-        height  : auto;
-        width   : 140px;
+        padding: 10px;
     }
+
 }
 
 .imgBoxServices {
-    position     : relative;
     margin-inline: 17px;
     float        : left;
+    position     : relative;
     box-sizing   : border-box;
-    width        : 215px;
-    height       : 251px;
-    left         : -11px;
-    border       : 3px solid #A6856A;
-    filter       : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width        : 393px;
+    height       : 404px;
+    left         : 25px;
+    top          : 35px;
+    background   : #E7E3E0;
+    border       : 3px solid #E7E3E0;
+    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+
 }
 
-.imgBoxServices .hoverImage {
+.imageInnServices {
+    img {
+        position: relative;
+        top     : 80px;
+    }
+}
+
+
+.imgBoxServices .hoverImageServices {
     position: absolute;
     left    : 0;
     top     : 0;
     display : none;
+
+}
+
+.btnHome {
+    position       : relative;
+    width          : 257px;
+    margin-inline  : 30px;
+    top            : 135px;
+    height         : 79px;
+    background     : rgba(155, 132, 146, 0.8);
+    box-shadow     : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius  : 60px;
+    font-family    : 'Poppins';
+    font-style     : normal;
+    font-weight    : 400;
+    font-size      : 24px;
+    line-height    : 36px;
+    display        : flex;
+    color          : #FFFFFF;
+    justify-content: center;
+    align-items    : center;
 }
 
 
-.imgBoxServices:hover .hoverImage {
-    filter    : drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
-    background: transparent;
-    display   : block;
+.btnHome:hover {
+    background   : #9B8492;
+    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    font-family  : 'Poppins';
+    font-style   : normal;
+    font-weight  : 500;
+    font-size    : 24px;
+    line-height  : 36px;
+    color        : #FFFFFF;
+}
+
+
+.imgBoxServices:hover .hoverImageServices {
+    display: block;
 }
 
 @media (max-width: 767px) {
     .services-area {
-        margin-top: 880px;
-        background: none;
+        margin-top      : 880px;
+        background-image: url('../assets/images/Rectangle\ 17.png');
     }
 
     .services-content {
-
         .title {
             font-family: 'Poppins';
             font-style : normal;
@@ -2113,8 +2132,24 @@ p {
             display    : flex;
             align-items: center;
             text-align : center;
-            color: #A6856A;left: 175px;
-top : -130px;
+            color      : #A6856A;
+            left       : 175px;
+            top        : -130px;
+        }
+    }
+
+    .imagesGroupServices {
+        display        : flex;
+        position       : absolute;
+        flex-wrap      : wrap;
+        justify-content: center;
+
+        img {
+            position: absolute;
+            top     : 55px;
+            left    : 35px;
+            height  : auto;
+            width   : 60px;
         }
     }
 }
@@ -2155,11 +2190,9 @@ top : -130px;
 
 
 .news-area {
-    margin-top: 900px;
     width     : 100%;
     height    : 797px;
-    left      : 0px;
-    top       : 2306px;
+    margin-top: 1000px;
     background: #9FA292;
 
 }
@@ -2173,34 +2206,32 @@ top : -130px;
 }
 
 .sectionTitle {
-    position   : absolute;
+    position   : relative;
     width      : 209px;
     height     : 54px;
-    left       : 650px;
-    top        : 2225px;
     font-family: 'Poppins';
     font-style : normal;
     font-weight: 600;
+    left       : 600px;
+    top        : 55px;
     font-size  : 36px;
     line-height: 54px;
-    display    : flex;
-    align-items: center;
-    text-align : center;
     color      : #FFFFFF;
 }
 
 .news {
     .row {
         box-sizing   : border-box;
-        position     : absolute;
+        position     : relative;
         width        : 1225px;
         height       : 542px;
-        left         : 130px;
-        top          : 2350px;
+        left         : 75px;
+        top          : 140px;
         border       : 1px solid #FFFFFF;
         border-radius: 48px;
     }
 }
+
 
 .newsTitle {
     position   : absolute;
@@ -2239,10 +2270,12 @@ top : -130px;
 
 @media (max-width: 767px) {
     .news-area {
-        background-image     : url('../assets/images/Coming\ soon\ Mobile.webp');
-        background-blend-mode: normal;
-        margin-top           : 1263px;
-        height               : 402px;
+        margin-top: 3000px;
+        height    : 402px;
+
+        .row {
+            margin-top: 1000px;
+        }
     }
 
 }
@@ -2281,11 +2314,9 @@ top : -130px;
 
 
 .pricing-trust {
-    position   : absolute;
+    position   : relative;
     width      : 84px;
     height     : 54px;
-    left       : 678px;
-    top        : 3030px;
     font-family: 'Poppins';
     font-style : normal;
     font-weight: 500;
@@ -2295,6 +2326,8 @@ top : -130px;
     align-items: center;
     text-align : center;
     color      : #9B8492;
+    top        : 85px px;
+    left       : 650px;
 }
 
 
@@ -2584,10 +2617,6 @@ top : -130px;
 .contact-area {
     margin-top   : 160px;
     margin-bottom: 102px;
-    box-sizing   : border-box;
-    background   : #A6856A;
-    border       : 1px solid #A6856A;
-    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     width        : 1160px;
     height       : 440px;
@@ -2596,14 +2625,11 @@ top : -130px;
 }
 
 .contactBox {
-    position     : relative;
-    width        : 1031px;
-    height       : 391px;
-    top          : 25px;
-    left         : 65px;
-    background   : #E7E3E0;
-    border       : 1px solid #A6856A;
-    border-radius: 40px;
+    position: relative;
+    width   : 1031px;
+    height  : 391px;
+    top     : 25px;
+    left    : 65px;
 }
 
 .btnContact {
