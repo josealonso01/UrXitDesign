@@ -1781,32 +1781,30 @@ b {
     line-height: 24px;
     top: 30px;
     color: #F1EFED;
-    position: relative; } }
-
-.btnHome {
-  position: relative;
-  left: -150px;
-  top: 115px;
-  margin-bottom: 25px;
-  width: 163px;
-  height: 36px;
-  background: rgba(155, 132, 146, 0.8);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 60px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  color: #FFFFFF; }
-
-.btnHome:hover {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  color: #FFFFFF; }
+    position: relative; }
+  .btnHome {
+    position: relative;
+    left: -150px;
+    top: 115px;
+    margin-bottom: 25px;
+    width: 163px;
+    height: 36px;
+    background: rgba(155, 132, 146, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .btnHome:hover {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF; } }
 
 @media only screen and (min-width: 576px) and (max-width: 769px) {
   .services-area {
@@ -2122,7 +2120,8 @@ b {
 
 .contact-area {
   margin-top: 160px;
-  margin-bottom: -200px;
+  margin-bottom: 102px;
+  border-radius: 40px;
   width: 1160px;
   height: 440px;
   position: relative;
@@ -2180,6 +2179,8 @@ b {
   height: 200px; }
 
 @media (max-width: 767px) {
+  .contact-area {
+    margin-bottom: -200px; }
   .contactTitle {
     position: relative;
     width: 113px;
