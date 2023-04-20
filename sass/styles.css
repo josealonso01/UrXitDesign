@@ -726,7 +726,7 @@ b {
     height: 580px;
     width: 109px;
     padding-top: 80px;
-    left: 400px;
+    left: 386px;
     z-index: 9999;
     transform: translateX(100%);
     transition: all 0.3s ease-out 0s;
@@ -1723,16 +1723,16 @@ b {
     left: 220px;
     top: -400px; }
   .imagesGroupServices {
+    width: 100%;
     display: flex;
-    position: absolute;
     flex-wrap: nowrap;
-    justify-content: center;
     flex-direction: column;
     position: relative;
-    left: -425px;
     background: none;
     top: -330px;
+    left: 0;
     box-shadow: none;
+    justify-content: center;
     align-items: center; }
     .imagesGroupServices img {
       position: absolute;
