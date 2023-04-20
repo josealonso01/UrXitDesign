@@ -1218,7 +1218,7 @@ b {
         flex-wrap      : nowrap;
         flex-direction : column;
         justify-content: center;
-        align-items    : center;
+        align-items    : flex-start;
     }
 }
 
@@ -2249,8 +2249,6 @@ b {
     }
 
     .btnHome {
-        position     : relative;
-        left         : -150px;
         top          : 115px;
         margin-bottom: 25px;
         width        : 163px;

@@ -979,7 +979,7 @@ b {
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: flex-start; } }
 
 .navbar-area .navbar .navbar-nav .nav-item .sub-menu li {
   position: relative; }
@@ -1783,8 +1783,6 @@ b {
     color: #F1EFED;
     position: relative; }
   .btnHome {
-    position: relative;
-    left: -150px;
     top: 115px;
     margin-bottom: 25px;
     width: 163px;
