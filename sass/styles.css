@@ -1739,7 +1739,7 @@ b {
     position: relative;
     background: none;
     top: -330px;
-    left: -20;
+    left: -25px;
     box-shadow: none;
     justify-content: center;
     align-items: center; }
@@ -2018,107 +2018,55 @@ b {
   text-align: center;
   color: #9B8492; }
 
+.brandNames {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF; }
+
 @media (max-width: 767px) {
-  .pricing-area {
-    margin-top: 0px;
-    background-image: url("../assets/images/Vector 3.png"), url("../assets/images/Vector 11.png"), url("../assets/images/ori-20-1.webp"), url("../assets/images/Vector 2.png");
-    background-position: 1px -54px, 1px 428px, 1px 855px, 1px 1610px;
-    background-blend-mode: hue;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    padding-bottom: 125px; }
-  .pricing-trustImg a img {
-    padding: 0; }
-  .pricing-title {
-    margin-left: 40px;
-    font-family: 'Futura';
+  .pricing-trust {
+    position: relative;
+    left: 220px;
+    width: 49px;
+    height: 30px;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 27px;
-    color: #3E3B39; }
-    .pricing-title .logoPricing {
-      visibility: visible; }
-  .pricing-subtitle {
-    top: 1852px;
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    color: #4B4845; }
-  .descuentos {
+    line-height: 30px;
+    color: #9B8492; }
+  .trust-img-div {
     display: flex;
     overflow-x: scroll; }
-    .descuentos .imageInn {
-      width: 148.7px;
-      height: 148.7px;
-      align-items: center; }
-    .descuentos .imageBox {
-      margin-bottom: 29px; }
-  .pricing-images {
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 26px;
-    background: #DF4F89;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px; }
-  .trust-img {
-    padding-top: 18px;
-    margin-left: 2px; }
-    .trust-img img {
-      margin-inline-end: 50px;
-      margin-inline-start: 50px;
-      width: 225px;
-      height: auto; }
-  .pricing-trust {
-    padding-top: 100px;
-    font-family: 'Futura';
+  .staffNames {
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #3E3B39; }
-  .brandNames {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Futura';
+    line-height: 30px;
+    color: #9B8492; }
+  .staffService {
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF; }
-  .discount {
-    display: block;
-    visibility: visible;
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    color: #FFFFFF; }
-  .imageBox .hoverImg {
-    visibility: hidden; }
-  .mobileVersion {
-    display: block; }
-  .urxitWeb {
-    display: none; } }
-
-@media only screen and (min-width: 370px) and (max-width: 400px) {
-  .pricing-images {
-    margin-left: 10px;
-    margin-right: 10px; } }
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-inline: 40px;
+    color: #9B8492;
+    width: 253px;
+    height: 30px; } }
 
 @media only screen and (min-width: 576px) and (max-width: 769px) {
   .pricing-area {
     padding-bottom: 66px;
     margin-top: 0px;
     background-image: none; }
-  .pricing-trustImg a img {
-    padding: 0; }
   .pricing-title {
     margin-left: 40px;
     font-family: 'Futura';
@@ -2159,8 +2107,6 @@ b {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 27px;
-    /* identical to box height */
     text-align: center;
     text-decoration-line: underline;
     color: #3E3B39; }
@@ -2172,31 +2118,11 @@ b {
     font-size: 13px;
     line-height: 21px;
     text-align: center;
-    color: #FFFFFF; }
-  .discount {
-    display: block;
-    visibility: visible;
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF; }
-  .imageBox .hoverImg {
-    visibility: hidden; }
-  .mobileVersion {
-    display: block; }
-  .urxitWeb {
-    display: none; } }
+    color: #FFFFFF; } }
 
-/*===========================
-      20.CONTACT css 
-===========================*/
 .contact-area {
   margin-top: 160px;
-  margin-bottom: 102px;
-  border-radius: 40px;
+  margin-bottom: -200px;
   width: 1160px;
   height: 440px;
   position: relative;
@@ -2246,77 +2172,57 @@ b {
   line-height: 54px;
   color: #A6856A; }
 
+.footer-copyright {
+  background: rgba(155, 132, 146, 0.47);
+  height: 200px; }
+
+.footer-img {
+  height: 200px; }
+
 @media (max-width: 767px) {
-  .contact-area {
-    background: #DF4F89;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 45px;
-    width: 375px;
-    height: 280px;
-    margin: auto; }
-  .contactText {
-    font-family: 'Futura';
+  .contactTitle {
+    position: relative;
+    width: 113px;
+    height: 30px;
+    top: -125px;
+    left: -200px;
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    color: #FFFFFF;
-    margin: 30px;
-    padding-top: 41px; }
-  .btnContact {
-    margin: -110px;
-    width: 219px;
-    height: 38px;
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 35px;
-    color: #FFFFFF;
-    position: absolute;
-    bottom: 270px;
-    padding: 0px; }
-  .contactSubText {
-    padding: 5px;
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 27px;
-    text-align: center;
-    color: #FFFFFF; }
-  .contactTextRedes {
-    font-family: 'Futura';
-    font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #3E3B39;
-    padding-top: 0px;
-    padding-bottom: 0px; }
-  .contactTextOri {
-    padding-top: 0px;
-    font-family: 'Futura';
+    line-height: 30px;
+    color: #A6856A; }
+  .contactText {
+    position: relative;
+    width: 350px;
+    height: 93px;
+    top: -50px;
+    left: -300px;
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #A6856A; }
+  .btnContact {
+    position: absolute;
+    width: 196px;
+    height: 46px;
+    left: -240px;
+    padding: 10px;
+    background: #A6856A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #3E3B39;
-    margin-bottom: 140px; }
-  .redes-area {
-    padding-top: 0px; }
-    .redes-area .icons {
-      margin: 10px; }
-  .redesIcons {
-    padding-top: 23px;
-    padding-bottom: 23px; }
-    .redesIcons .icons {
-      width: 18px;
-      height: 18px; }
-      .redesIcons .icons img {
-        margin: 0px; } }
+    line-height: 24px;
+    color: #E7E3E0; }
+  .footer-copyright {
+    background-color: transparent; }
+    .footer-copyright img {
+      display: none; } }
 
 @media only screen and (min-width: 576px) and (max-width: 769px) {
   .btnContact {
@@ -2328,21 +2234,6 @@ b {
     font-weight: 500;
     font-size: 14px;
     line-height: 35px; } }
-
-.footer-copyright {
-  background: rgba(155, 132, 146, 0.47);
-  height: 200px; }
-
-.footer-img {
-  height: 200px; }
-
-@media (max-width: 767px) {
-  .footer-copyright {
-    background: rgba(155, 132, 146, 0.47); } }
-
-@media only screen and (min-width: 576px) and (max-width: 769px) {
-  .footer-copyright {
-    background: rgba(155, 132, 146, 0.47); } }
 
 .back-to-top {
   font-size: 20px;
