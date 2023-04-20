@@ -83,6 +83,9 @@ p {
   color: #121212;
   margin: 0px; }
 
+b {
+  font-weight: bold; }
+
 .bg_cover {
   background-position: center center;
   background-size: cover;
@@ -647,6 +650,7 @@ p {
   body {
     width: 100%; }
   .navbar-area {
+    box-shadow: none;
     width: 100%;
     height: 77px;
     padding: 10px 0; }
@@ -722,7 +726,7 @@ p {
     height: 580px;
     width: 109px;
     padding-top: 80px;
-    left: 300px;
+    left: 400px;
     z-index: 9999;
     transform: translateX(100%);
     transition: all 0.3s ease-out 0s;
@@ -933,7 +937,8 @@ p {
 @media (max-width: 767px) {
   .carousel_mobile {
     display: block;
-    height: 584px; }
+    height: 584px;
+    width: 100%; }
   .carousel_full {
     display: none; }
   .navbar-area .navbar .navbar-nav .nav-item .sub-menu {
@@ -959,7 +964,13 @@ p {
     -moz-box-shadow: none;
     box-shadow: none;
     text-align: left;
-    border-top: 0; } }
+    border-top: 0; }
+  .carousel-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 .navbar-area .navbar .navbar-nav .nav-item .sub-menu li {
   position: relative; }
@@ -1211,8 +1222,23 @@ p {
 
 @media (max-width: 767px) {
   .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
+    position: absolute;
+    width: 292px;
+    height: 72px;
+    left: 15px;
+    top: -75px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
     font-size: 24px;
-    line-height: 32px; } }
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    flex-wrap: wrap;
+    justify-content: flex-start; } }
 
 .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li {
   display: inline-block;
@@ -1572,8 +1598,8 @@ p {
     position: absolute;
     font-family: 'Poppins';
     font-style: normal;
-    left: 175px;
-    top: -130px;
+    left: 240px;
+    top: -675px;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -1583,7 +1609,10 @@ p {
     color: #9B8492; }
   .imagesGroup {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+    position: absolute;
+    top: -575px;
+    left: -10px; } }
 
 .services-area {
   margin-top: 525px;
@@ -1675,10 +1704,12 @@ p {
 .imgBoxServices:hover .hoverImageServices {
   display: block; }
 
+.textServices {
+  display: none; }
+
 @media (max-width: 767px) {
   .services-area {
-    margin-top: 880px;
-    background-image: url("../assets/images/Rectangle 17.png"); }
+    margin-top: 880px; }
   .services-content .title {
     font-family: 'Poppins';
     font-style: normal;
@@ -1689,19 +1720,84 @@ p {
     align-items: center;
     text-align: center;
     color: #A6856A;
-    left: 175px;
-    top: -130px; }
+    left: 220px;
+    top: -400px; }
   .imagesGroupServices {
     display: flex;
     position: absolute;
-    flex-wrap: wrap;
-    justify-content: center; }
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: -425px;
+    background: none;
+    top: -330px;
+    box-shadow: none;
+    align-items: center; }
     .imagesGroupServices img {
       position: absolute;
-      top: 55px;
-      left: 35px;
-      height: auto;
-      width: 60px; } }
+      top: -50px;
+      left: -25px;
+      background: #F1EFED;
+      border: 3px solid #A6856A;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      width: 113px;
+      height: 116px;
+      border-radius: 30px; }
+    .imagesGroupServices .comunicacion {
+      top: -50px;
+      left: 280px; }
+  .imgBoxServices {
+    margin-inline: 17px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    width: 347px;
+    height: 131px;
+    left: 25px;
+    top: 33px;
+    background: #A6856A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 28px;
+    border-radius: 21px;
+    border: none; }
+  .hoverImageServices img {
+    display: none; }
+  .textServices {
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    top: 30px;
+    color: #F1EFED;
+    position: relative; } }
+
+.btnHome {
+  position: relative;
+  left: -150px;
+  top: 115px;
+  margin-bottom: 25px;
+  width: 163px;
+  height: 36px;
+  background: rgba(155, 132, 146, 0.8);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF; }
+
+.btnHome:hover {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF; }
 
 @media only screen and (min-width: 576px) and (max-width: 769px) {
   .services-area {
@@ -1745,7 +1841,7 @@ p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  left: 600px;
+  left: 675px;
   top: 55px;
   font-size: 36px;
   line-height: 54px;
@@ -1755,8 +1851,9 @@ p {
   box-sizing: border-box;
   position: relative;
   width: 1225px;
+  margin: 0;
   height: 542px;
-  left: 75px;
+  left: 275px;
   top: 140px;
   border: 1px solid #FFFFFF;
   border-radius: 48px; }
@@ -1795,10 +1892,66 @@ p {
 
 @media (max-width: 767px) {
   .news-area {
-    margin-top: 3000px;
-    height: 402px; }
-    .news-area .row {
-      margin-top: 1000px; } }
+    margin-top: 1175px;
+    height: 660px; }
+  .sectionTitle {
+    left: 150px;
+    top: 3000px;
+    position: absolute;
+    width: 209px;
+    height: 54px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF; }
+  .news .row {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    width: 375px;
+    height: 471px;
+    left: 60px;
+    top: 140px;
+    border: 1px solid #FFFFFF;
+    border-radius: 48px; }
+  .newsTitle {
+    position: absolute;
+    width: 168px;
+    height: 24px;
+    left: 105px;
+    top: 45px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF; }
+  .newsSecondCol a {
+    width: 335px;
+    height: 251px;
+    position: relative;
+    left: -10px;
+    top: -40px; }
+  .newsSubtitle {
+    position: absolute;
+    width: 302px;
+    height: 105px;
+    left: 42px;
+    top: 335px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF; } }
 
 @media only screen and (min-width: 576px) and (max-width: 769px) {
   .news-area {
@@ -1832,12 +1985,9 @@ p {
   font-weight: 500;
   font-size: 36px;
   line-height: 54px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #9B8492;
-  top: 85px px;
-  left: 650px; }
+  top: 85px;
+  left: 825px; }
 
 .staffNames {
   font-family: 'Poppins';
@@ -2041,7 +2191,7 @@ p {
   width: 1160px;
   height: 440px;
   position: relative;
-  left: 130px; }
+  left: 325px; }
 
 .contactBox {
   position: relative;
