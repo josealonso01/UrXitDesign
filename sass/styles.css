@@ -664,10 +664,6 @@ b {
   .btnSideBar {
     display: block; } }
 
-.navbar-area .navbar {
-  position: relative;
-  padding: 0; }
-
 .navbar-area .navbar .navbar-toggler .toggler-icon {
   visibility: hidden;
   width: 30px;
@@ -1197,7 +1193,6 @@ b {
   box-shadow: 0 3px 6px 0 #000000 opacity(0.1);
   padding: 5px 0; }
 
-/*===== SLIDER ONE =====*/
 .slider-area .bd-example .carousel .carousel-inner {
   background-color: #fff; }
 
@@ -1505,6 +1500,7 @@ b {
   .about-area .section-title {
     position: absolute;
     width: 349px;
+    margin-left: 30px;
     height: 349px;
     background: #9B9B84;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.31);
@@ -1604,24 +1600,31 @@ b {
   .portfolio-area {
     background: none; }
   .portfolio-content .title {
-    position: absolute;
+    top: -675px;
+    left: 0;
+    margin: auto;
+    position: relative; }
+  .portfolio-content h3 {
     font-family: 'Poppins';
     font-style: normal;
-    left: 240px;
-    top: -675px;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
+    color: #9B8492;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #9B8492; }
+    justify-content: center; }
   .imagesGroup {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: absolute;
-    top: -575px;
-    left: -10px; } }
+    top: -655px;
+    left: auto;
+    flex-direction: column;
+    margin: 65px;
+    justify-content: center;
+    align-items: center; } }
 
 .services-area {
   margin-top: 525px;
@@ -1720,17 +1723,21 @@ b {
   .services-area {
     margin-top: 880px; }
   .services-content .title {
+    top: -400px;
+    left: 0;
+    margin: auto;
+    position: relative; }
+  .services-content h3 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
+    color: #A6856A;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #A6856A;
-    left: 220px;
-    top: -400px; }
+    justify-content: center; }
   .imagesGroupServices {
     width: 100%;
     display: flex;
@@ -1738,8 +1745,9 @@ b {
     flex-direction: column;
     position: relative;
     background: none;
-    top: -330px;
-    left: -25px;
+    top: -425px;
+    left: auto;
+    margin: auto;
     box-shadow: none;
     justify-content: center;
     align-items: center; }
@@ -1755,7 +1763,7 @@ b {
       border-radius: 30px; }
     .imagesGroupServices .comunicacion {
       top: -50px;
-      left: 280px; }
+      left: 260px; }
   .imgBoxServices {
     margin-inline: 17px;
     float: left;
@@ -1899,26 +1907,29 @@ b {
   .news-area {
     margin-top: 1175px;
     height: 660px; }
-  .sectionTitle {
-    left: 150px;
-    top: 3000px;
-    position: absolute;
-    width: 209px;
-    height: 54px;
+  .news .title {
+    top: 60px;
+    left: 0;
+    margin: auto;
+    position: relative; }
+  .news h3 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; }
   .news .row {
     box-sizing: border-box;
-    position: relative;
-    margin: 0;
     width: 375px;
     height: 471px;
-    left: 60px;
-    top: 140px;
+    left: auto;
+    top: 129px;
+    margin: auto;
     border: 1px solid #FFFFFF;
     border-radius: 48px; }
   .newsTitle {
@@ -2026,17 +2037,24 @@ b {
   color: #FFFFFF; }
 
 @media (max-width: 767px) {
-  .pricing-trust {
-    position: relative;
-    left: 220px;
-    width: 49px;
-    height: 30px;
+  .pricing-area .title {
+    top: 70px;
+    left: 0;
+    margin: auto;
+    position: relative; }
+  .pricing-area h3 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-    color: #9B8492; }
+    color: #9B8492;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; }
+  .trust-img {
+    padding-top: 170px; }
   .trust-img-div {
     display: flex;
     overflow-x: scroll; }

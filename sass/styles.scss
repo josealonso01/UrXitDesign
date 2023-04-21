@@ -835,12 +835,6 @@ b {
     }
 }
 
-
-.navbar-area .navbar {
-    position: relative;
-    padding : 0;
-}
-
 .navbar-area .navbar .navbar-toggler .toggler-icon {
     visibility        : hidden;
     width             : 30px;
@@ -1503,7 +1497,6 @@ b {
 
 
 
-/*===== SLIDER ONE =====*/
 .slider-area .bd-example .carousel .carousel-inner {
     background-color: #fff;
 }
@@ -1889,10 +1882,11 @@ b {
         .section-title {
             position     : absolute;
             width        : 349px;
+            margin-left  : 30px;
             height       : 349px;
             background   : #9B9B84;
             box-shadow   : 0px 4px 15px rgba(0, 0, 0, 0.31);
-            border-radius: 40px
+            border-radius: 40px;
         }
     }
 
@@ -2018,27 +2012,37 @@ b {
 
     .portfolio-content {
         .title {
-            position   : absolute;
-            font-family: 'Poppins';
-            font-style : normal;
-            left       : 240px;
-            top        : -675px;
-            font-weight: 700;
-            font-size  : 20px;
-            line-height: 30px;
-            display    : flex;
-            align-items: center;
-            text-align : center;
-            color      : #9B8492;
+            top     : -675px;
+            left    : 0;
+            margin  : auto;
+            position: relative;
+        }
+
+        h3 {
+            font-family    : 'Poppins';
+            font-style     : normal;
+            font-weight    : 700;
+            font-size      : 20px;
+            line-height    : 30px;
+            color          : #9B8492;
+            display        : flex;
+            align-items    : center;
+            text-align     : center;
+            justify-content: center;
         }
     }
 
+
     .imagesGroup {
-        display  : flex;
-        flex-wrap: wrap;
-        position : absolute;
-        top      : -575px;
-        left     : -10px;
+        display        : flex;
+        flex-wrap      : nowrap;
+        position       : absolute;
+        top            : -655px;
+        left           : auto;
+        flex-direction : column;
+        margin         : 65px;
+        justify-content: center;
+        align-items    : center;
     }
 }
 
@@ -2168,17 +2172,23 @@ b {
 
     .services-content {
         .title {
-            font-family: 'Poppins';
-            font-style : normal;
-            font-weight: 700;
-            font-size  : 20px;
-            line-height: 30px;
-            display    : flex;
-            align-items: center;
-            text-align : center;
-            color      : #A6856A;
-            left       : 220px;
-            top        : -400px;
+            top     : -400px;
+            left    : 0;
+            margin  : auto;
+            position: relative;
+        }
+
+        h3 {
+            font-family    : 'Poppins';
+            font-style     : normal;
+            font-weight    : 700;
+            font-size      : 20px;
+            line-height    : 30px;
+            color          : #A6856A;
+            display        : flex;
+            align-items    : center;
+            text-align     : center;
+            justify-content: center;
         }
     }
 
@@ -2189,8 +2199,9 @@ b {
         flex-direction : column;
         position       : relative;
         background     : none;
-        top            : -330px;
-        left           : -25px;
+        top            : -425px;
+        left           : auto;
+        margin         : auto;
         box-shadow     : none;
         justify-content: center;
         align-items    : center;
@@ -2209,7 +2220,7 @@ b {
 
         .comunicacion {
             top : -50px;
-            left: 280px;
+            left: 260px;
         }
     }
 
@@ -2398,29 +2409,38 @@ b {
 
     }
 
-    .sectionTitle {
-        left       : 150px;
-        top        : 3000px;
-        position   : absolute;
-        width      : 209px;
-        height     : 54px;
-        font-family: 'Poppins';
-        font-style : normal;
-        font-weight: 700;
-        font-size  : 20px;
-        line-height: 30px;
-        color      : #FFFFFF;
+    .news {
+        .title {
+            top     : 60px;
+            left    : 0;
+            margin  : auto;
+            position: relative;
+        }
+
+        h3 {
+            font-family    : 'Poppins';
+            font-style     : normal;
+            font-weight    : 700;
+            font-size      : 20px;
+            line-height    : 30px;
+            color          : #FFFFFF;
+            display        : flex;
+            align-items    : center;
+            text-align     : center;
+            justify-content: center;
+        }
     }
+
+
 
     .news {
         .row {
             box-sizing   : border-box;
-            position     : relative;
-            margin       : 0;
             width        : 375px;
             height       : 471px;
-            left         : 60px;
-            top          : 140px;
+            left         : auto;
+            top          : 129px;
+            margin       : auto;
             border       : 1px solid #FFFFFF;
             border-radius: 48px;
         }
@@ -2557,19 +2577,31 @@ b {
 
 
 @media (max-width: 767px) {
-    .pricing-trust {
-        position   : relative;
-        left       : 220px;
-        width      : 49px;
-        height     : 30px;
-        font-family: 'Poppins';
-        font-style : normal;
-        font-weight: 700;
-        font-size  : 20px;
-        line-height: 30px;
-        color      : #9B8492;
+    .pricing-area {
+        .title {
+            top     : 70px;
+            left    : 0;
+            margin  : auto;
+            position: relative;
+        }
+
+        h3 {
+            font-family    : 'Poppins';
+            font-style     : normal;
+            font-weight    : 700;
+            font-size      : 20px;
+            line-height    : 30px;
+            color          : #9B8492;
+            display        : flex;
+            align-items    : center;
+            text-align     : center;
+            justify-content: center;
+        }
     }
 
+    .trust-img {
+        padding-top: 170px;
+    }
 
 
     .trust-img-div {
