@@ -112,19 +112,13 @@ b {
     height             : 100%;
 }
 
-/*==== Section Title =====*/
-
-
-/*===== All Preloader Style =====*/
 .preloader {
-    /* Body Overlay */
     position  : fixed;
     top       : 0;
     left      : 0;
     display   : table;
     height    : 100%;
     width     : 100%;
-    /* Change Background Color */
     background: #fff;
     z-index   : 99999;
 }
@@ -2013,7 +2007,7 @@ b {
     .portfolio-content {
         .title {
             top     : -675px;
-            left    : 0;
+            left    : auto;
             margin  : auto;
             position: relative;
         }
@@ -2034,16 +2028,13 @@ b {
 
 
     .imagesGroup {
-        display        : flex;
-        flex-wrap      : nowrap;
-        position       : absolute;
-        top            : -655px;
-        left           : auto;
-        flex-direction : column;
-        margin         : 65px;
-        justify-content: center;
-        align-items    : center;
+        flex-wrap: wrap;
+        position : absolute;
+        top      : -580px;
+        left     : auto;
+        margin   : auto;
     }
+
 }
 
 
@@ -2193,18 +2184,14 @@ b {
     }
 
     .imagesGroupServices {
-        width          : 100%;
-        display        : flex;
-        flex-wrap      : nowrap;
-        flex-direction : column;
-        position       : relative;
-        background     : none;
-        top            : -425px;
-        left           : auto;
-        margin         : auto;
-        box-shadow     : none;
-        justify-content: center;
-        align-items    : center;
+        flex-direction: column;
+        position      : relative;
+        background    : none;
+        width         : auto;
+        top           : -415px;
+        left          : auto;
+        margin        : auto;
+        box-shadow    : none;
 
         img {
             position     : absolute;
@@ -2714,21 +2701,21 @@ b {
 
 
 .contact-area {
-    margin-top   : 160px;
-    margin-bottom: 102px;
-    border-radius: 40px;
-    width        : 1160px;
-    height       : 440px;
     position     : relative;
-    left         : 325px;
+    top          : 100px;
+    margin-top   : 150px;
+    margin-bottom: 250px;
 }
+
+
 
 .contactBox {
     position: relative;
     width   : 1031px;
     height  : 391px;
     top     : 25px;
-    left    : 65px;
+    left    : auto;
+    margin  : auto;
 }
 
 .btnContact {
@@ -2783,53 +2770,49 @@ b {
 }
 
 @media (max-width: 767px) {
-    .contact-area {
-        margin-bottom: -200px;
-    }
+    @media (max-width: 767px) {
+        .contact-area {
+            margin: auto;
+        }
 
-    .contactTitle {
-        position   : relative;
-        width      : 113px;
-        height     : 30px;
-        top        : -125px;
-        left       : -200px;
-        font-family: 'Poppins';
-        font-style : normal;
-        font-weight: 700;
-        font-size  : 20px;
-        line-height: 30px;
-        color      : #A6856A;
-    }
+        .textContactArea {
+            h1 {
+                font-family: 'Poppins';
+                font-style : normal;
+                font-weight: 700;
+                font-size  : 20px;
+                line-height: 30px;
+                margin     : 30px;
+                padding-top: 41px;
+                color      : #A6856A;
+            }
 
-    .contactText {
-        position   : relative;
-        width      : 350px;
-        height     : 93px;
-        top        : -50px;
-        left       : -300px;
-        font-family: 'Poppins';
-        font-style : normal;
-        font-weight: 300;
-        font-size  : 15px;
-        line-height: 22px;
-        color      : #A6856A;
-    }
+            h2 {
+                font-family: 'Poppins';
+                font-style : normal;
+                font-weight: 300;
+                font-size  : 15px;
+                line-height: 22px;
+                color      : #A6856A;
+                margin     : 30px;
+            }
 
-    .btnContact {
-        position     : absolute;
-        width        : 196px;
-        height       : 46px;
-        left         : -240px;
-        padding      : 10px;
-        background   : #A6856A;
-        box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 30px;
-        font-family  : 'Poppins';
-        font-style   : normal;
-        font-weight  : 700;
-        font-size    : 16px;
-        line-height  : 24px;
-        color        : #E7E3E0;
+        }
+
+        .btnContact {
+            margin     : -110px;
+            width      : 219px;
+            height     : 38px;
+            font-family: 'Poppins';
+            font-style : normal;
+            font-weight: 700;
+            font-size  : 16px;
+            line-height: 24px;
+            color      : #E7E3E0;
+            position   : absolute;
+            bottom     : 110px;
+            padding    : 5px;
+        }
     }
 
     .footer-copyright {
