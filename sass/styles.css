@@ -1713,7 +1713,7 @@ b {
 
 @media (max-width: 767px) {
   .services-area {
-    padding-top: 820px; }
+    margin-top: 1415px; }
   .services-content .title {
     top: -400px;
     margin: auto;
@@ -1731,14 +1731,12 @@ b {
       text-align: center;
       justify-content: center; }
   .imagesGroupServices {
-    flex-direction: column;
     position: relative;
     background: none;
     top: -445px;
     margin: auto;
-    display: flex;
-    box-shadow: none;
-    align-items: center; }
+    display: inline-grid;
+    box-shadow: none; }
     .imagesGroupServices img {
       position: relative;
       float: left;
