@@ -2210,7 +2210,8 @@ b {
         img {
             position     : relative;
             top          : -93px;
-            left         : -170px;
+            float        : left;
+            left         : -35px;
             background   : #F1EFED;
             border       : 3px solid #A6856A;
             box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2220,8 +2221,9 @@ b {
         }
 
         .comunicacion {
-            left: 135px;
-            top : -135px;
+            float: right;
+            left : 35px;
+            top  : -120px;
         }
     }
 
@@ -2229,20 +2231,18 @@ b {
 
 
     .imgBoxServices {
-        margin-inline: 17px;
-        float        : left;
         position     : relative;
         box-sizing   : border-box;
         width        : 347px;
         height       : 131px;
-        left         : 25px;
-        top          : 33px;
+        margin       : auto;
         background   : #A6856A;
         box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-top   : 28px;
+        margin-top   : 55px;
         border-radius: 21px;
         border       : none;
     }
+
 
     .hoverImageServices {
         img {
