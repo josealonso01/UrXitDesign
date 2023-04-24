@@ -1734,16 +1734,16 @@ b {
     flex-direction: column;
     position: relative;
     background: none;
-    top: -415px;
+    top: -445px;
     margin: auto;
     display: flex;
     box-shadow: none;
     align-items: center; }
     .imagesGroupServices img {
       position: relative;
-      top: -93px;
       float: left;
-      left: -35px;
+      top: -90px;
+      margin-left: -35px;
       background: #F1EFED;
       border: 3px solid #A6856A;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1752,8 +1752,8 @@ b {
       border-radius: 30px; }
     .imagesGroupServices .comunicacion {
       float: right;
-      left: 35px;
-      top: -120px; }
+      margin-right: -15px;
+      margin-top: -45px; }
   .imgBoxServices {
     position: relative;
     box-sizing: border-box;
@@ -1762,7 +1762,7 @@ b {
     margin: auto;
     background: #A6856A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 55px;
+    margin-top: 85px;
     border-radius: 21px;
     border: none; }
   .hoverImageServices img {
@@ -1903,7 +1903,7 @@ b {
 
 @media (max-width: 767px) {
   .news-area {
-    margin-top: -270px;
+    margin-top: -160px;
     height: 660px; }
   .news .title {
     top: 60px;
