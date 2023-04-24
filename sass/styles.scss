@@ -2198,12 +2198,16 @@ b {
     }
 
     .imagesGroupServices {
-        position  : relative;
-        background: none;
-        top       : -445px;
-        margin    : auto;
-        display   : inline-grid;
-        box-shadow: none;
+        position       : relative;
+        background     : none;
+        top            : -445px;
+        margin-left    : -30px;
+        display        : flex;
+        box-shadow     : none;
+        flex-wrap      : wrap;
+        justify-content: center;
+        align-items    : center;
+        align-content  : flex-start;
 
 
         img {
