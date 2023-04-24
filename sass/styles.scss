@@ -2170,7 +2170,7 @@ b {
 
 @media (max-width: 767px) {
     .services-area {
-        margin-top: 1430px;
+        padding-top: 820px;
     }
 
     .services-content {
@@ -2208,9 +2208,9 @@ b {
         align-items   : center;
 
         img {
-            position     : absolute;
-            top          : -50px;
-            left         : -25px;
+            position     : relative;
+            top          : -93px;
+            left         : -170px;
             background   : #F1EFED;
             border       : 3px solid #A6856A;
             box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2218,12 +2218,13 @@ b {
             height       : 116px;
             border-radius: 30px;
         }
-
-        .comunicacion {
-            top : -50px;
-            left: 260px;
-        }
     }
+
+    .comunicacion {
+        left: 155px;
+        top : -120px;
+    }
+
 
     .imgBoxServices {
         margin-inline: 17px;
