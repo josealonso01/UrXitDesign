@@ -1869,10 +1869,13 @@ b {
 
 @media (max-width: 767px) {
     .about-area {
+        padding-bottom: 0;
+
         .section-title {
-            position     : absolute;
+            position     : relative;
             width        : 349px;
-            margin-left  : 30px;
+            top          : -100px;
+            margin       : auto;
             height       : 349px;
             background   : #9B9B84;
             box-shadow   : 0px 4px 15px rgba(0, 0, 0, 0.31);
@@ -1881,26 +1884,28 @@ b {
     }
 
     .about-area .section-title .sectionAbout {
-        position   : absolute;
-        left       : 116px;
-        width      : 223px;
-        height     : 65px;
-        font-family: 'Poppins';
-        font-style : normal;
-        font-weight: 700;
-        font-size  : 20px;
-        line-height: 30px;
-        display    : flex;
-        align-items: center;
-        text-align : center;
-        color      : #E7E3E0;
+        position       : relative;
+        margin         : auto;
+        height         : 65px;
+        font-family    : 'Poppins';
+        font-style     : normal;
+        font-weight    : 700;
+        font-size      : 20px;
+        top            : 30px;
+        line-height    : 30px;
+        display        : flex;
+        align-items    : center;
+        text-align     : center;
+        color          : #E7E3E0;
+        justify-content: center;
     }
 
+
     .about-area .section-title .sectionText {
-        position   : absolute;
-        width      : 251px;
+        position   : relative;
+        margin     : auto;
         height     : 168px;
-        left       : 50px;
+        width      : 251px;
         font-family: 'Poppins';
         font-style : normal;
         font-weight: 300;
@@ -1908,6 +1913,7 @@ b {
         line-height: 21px;
         text-align : center;
         color      : #E7E3E0;
+
     }
 
 }
@@ -2009,7 +2015,8 @@ b {
 
 @media (max-width: 767px) {
     .portfolio-area {
-        background: none;
+        padding-top: 535px;
+        background : none
     }
 
     .portfolio-content {
@@ -2018,28 +2025,26 @@ b {
             left    : auto;
             margin  : auto;
             position: relative;
-        }
 
-        h3 {
-            font-family    : 'Poppins';
-            font-style     : normal;
-            font-weight    : 700;
-            font-size      : 20px;
-            line-height    : 30px;
-            color          : #9B8492;
-            display        : flex;
-            align-items    : center;
-            text-align     : center;
-            justify-content: center;
+            h3 {
+                font-family    : 'Poppins';
+                font-style     : normal;
+                font-weight    : 700;
+                font-size      : 20px;
+                line-height    : 30px;
+                color          : #9B8492;
+                display        : flex;
+                align-items    : center;
+                text-align     : center;
+                justify-content: center;
+            }
         }
     }
 
-
     .imagesGroup {
         flex-wrap: wrap;
-        position : absolute;
-        top      : -580px;
-        left     : auto;
+        position : relative;
+        top      : -620px;
         margin   : auto;
     }
 
@@ -2165,29 +2170,31 @@ b {
 
 @media (max-width: 767px) {
     .services-area {
-        margin-top: 880px;
+        margin-top: 1430px;
     }
 
     .services-content {
         .title {
-            top     : -400px;
-            left    : 0;
-            margin  : auto;
-            position: relative;
+            top           : -400px;
+            margin        : auto;
+            position      : relative;
+            padding-bottom: 40px;
+
+            h3 {
+                font-family    : 'Poppins';
+                font-style     : normal;
+                font-weight    : 700;
+                font-size      : 20px;
+                line-height    : 30px;
+                color          : #A6856A;
+                display        : flex;
+                align-items    : center;
+                text-align     : center;
+                justify-content: center;
+            }
         }
 
-        h3 {
-            font-family    : 'Poppins';
-            font-style     : normal;
-            font-weight    : 700;
-            font-size      : 20px;
-            line-height    : 30px;
-            color          : #A6856A;
-            display        : flex;
-            align-items    : center;
-            text-align     : center;
-            justify-content: center;
-        }
+
     }
 
     .imagesGroupServices {
@@ -2413,8 +2420,9 @@ b {
 
 @media (max-width: 767px) {
     .news-area {
-        margin-top: 1175px;
-        height    : 660px;
+        margin-top: -270px;
+
+        height: 660px;
 
     }
 
@@ -2424,34 +2432,34 @@ b {
             left    : 0;
             margin  : auto;
             position: relative;
-        }
 
-        h3 {
-            font-family    : 'Poppins';
-            font-style     : normal;
-            font-weight    : 700;
-            font-size      : 20px;
-            line-height    : 30px;
-            color          : #FFFFFF;
-            display        : flex;
-            align-items    : center;
-            text-align     : center;
-            justify-content: center;
+            h3 {
+                font-family    : 'Poppins';
+                font-style     : normal;
+                font-weight    : 700;
+                font-size      : 20px;
+                line-height    : 30px;
+                color          : #FFFFFF;
+                display        : flex;
+                align-items    : center;
+                text-align     : center;
+                justify-content: center;
+            }
         }
     }
 
-
-
     .news {
         .row {
-            box-sizing   : border-box;
-            width        : 375px;
-            height       : 471px;
-            left         : auto;
-            top          : 129px;
-            margin       : auto;
-            border       : 1px solid #FFFFFF;
-            border-radius: 48px;
+            box-sizing     : border-box;
+            width          : 375px;
+            height         : 471px;
+            margin         : auto;
+            display        : flex;
+            top            : 129px;
+            margin         : auto;
+            border         : 1px solid #FFFFFF;
+            border-radius  : 48px;
+            justify-content: center;
         }
     }
 
@@ -2849,7 +2857,7 @@ b {
                 font-weight: 700;
                 font-size  : 20px;
                 line-height: 30px;
-                margin     : 30px;
+                margin     : auto;
                 padding-top: 41px;
                 color      : #A6856A;
             }
@@ -2860,27 +2868,30 @@ b {
                 font-weight: 300;
                 font-size  : 15px;
                 line-height: 22px;
+                width      : 350px;
                 color      : #A6856A;
-                margin     : 30px;
+                margin     : auto;
             }
 
         }
 
         .btnContact {
-            margin     : -110px;
-            width      : 219px;
-            height     : 38px;
-            font-family: 'Poppins';
-            font-style : normal;
-            font-weight: 700;
-            font-size  : 16px;
-            line-height: 24px;
-            color      : #E7E3E0;
-            position   : absolute;
-            bottom     : 110px;
-            padding    : 5px;
+            margin         : auto;
+            width          : 219px;
+            height         : 38px;
+            display        : flex;
+            font-family    : 'Poppins';
+            font-style     : normal;
+            font-weight    : 700;
+            font-size      : 16px;
+            line-height    : 24px;
+            color          : #E7E3E0;
+            justify-content: center;
+            align-items    : center;
+            position       : relative;
         }
     }
+
 
     .footer-copyright {
         background-color: transparent;

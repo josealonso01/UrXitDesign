@@ -1488,33 +1488,37 @@ b {
     padding-top: 60px; }
 
 @media (max-width: 767px) {
-  .about-area .section-title {
-    position: absolute;
-    width: 349px;
-    margin-left: 30px;
-    height: 349px;
-    background: #9B9B84;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.31);
-    border-radius: 40px; }
+  .about-area {
+    padding-bottom: 0; }
+    .about-area .section-title {
+      position: relative;
+      width: 349px;
+      top: -100px;
+      margin: auto;
+      height: 349px;
+      background: #9B9B84;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.31);
+      border-radius: 40px; }
   .about-area .section-title .sectionAbout {
-    position: absolute;
-    left: 116px;
-    width: 223px;
+    position: relative;
+    margin: auto;
     height: 65px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+    top: 30px;
     line-height: 30px;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #E7E3E0; }
+    color: #E7E3E0;
+    justify-content: center; }
   .about-area .section-title .sectionText {
-    position: absolute;
-    width: 251px;
+    position: relative;
+    margin: auto;
     height: 168px;
-    left: 50px;
+    width: 251px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
@@ -1593,28 +1597,28 @@ b {
 
 @media (max-width: 767px) {
   .portfolio-area {
+    padding-top: 535px;
     background: none; }
   .portfolio-content .title {
     top: -675px;
     left: auto;
     margin: auto;
     position: relative; }
-  .portfolio-content h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #9B8492;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center; }
+    .portfolio-content .title h3 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #9B8492;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center; }
   .imagesGroup {
     flex-wrap: wrap;
-    position: absolute;
-    top: -580px;
-    left: auto;
+    position: relative;
+    top: -620px;
     margin: auto; } }
 
 .services-area {
@@ -1709,23 +1713,23 @@ b {
 
 @media (max-width: 767px) {
   .services-area {
-    margin-top: 880px; }
+    margin-top: 1430px; }
   .services-content .title {
     top: -400px;
-    left: 0;
     margin: auto;
-    position: relative; }
-  .services-content h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #A6856A;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center; }
+    position: relative;
+    padding-bottom: 40px; }
+    .services-content .title h3 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #A6856A;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center; }
   .imagesGroupServices {
     flex-direction: column;
     position: relative;
@@ -1900,33 +1904,35 @@ b {
 
 @media (max-width: 767px) {
   .news-area {
-    margin-top: 1175px;
+    margin-top: -270px;
     height: 660px; }
   .news .title {
     top: 60px;
     left: 0;
     margin: auto;
     position: relative; }
-  .news h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center; }
+    .news .title h3 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center; }
   .news .row {
     box-sizing: border-box;
     width: 375px;
     height: 471px;
-    left: auto;
+    margin: auto;
+    display: flex;
     top: 129px;
     margin: auto;
     border: 1px solid #FFFFFF;
-    border-radius: 48px; }
+    border-radius: 48px;
+    justify-content: center; }
   .newsTitle {
     position: absolute;
     width: 168px;
@@ -2230,7 +2236,7 @@ b {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-    margin: 30px;
+    margin: auto;
     padding-top: 41px;
     color: #A6856A; }
   .textContactArea h2 {
@@ -2239,21 +2245,23 @@ b {
     font-weight: 300;
     font-size: 15px;
     line-height: 22px;
+    width: 350px;
     color: #A6856A;
-    margin: 30px; }
+    margin: auto; }
   .btnContact {
-    margin: -110px;
+    margin: auto;
     width: 219px;
     height: 38px;
+    display: flex;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     color: #E7E3E0;
-    position: absolute;
-    bottom: 110px;
-    padding: 5px; } }
+    justify-content: center;
+    align-items: center;
+    position: relative; } }
 
 @media (max-width: 767px) {
   .footer-copyright {
