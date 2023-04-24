@@ -1734,11 +1734,11 @@ b {
     flex-direction: column;
     position: relative;
     background: none;
-    width: auto;
     top: -415px;
-    left: auto;
     margin: auto;
-    box-shadow: none; }
+    display: flex;
+    box-shadow: none;
+    align-items: center; }
     .imagesGroupServices img {
       position: absolute;
       top: -50px;

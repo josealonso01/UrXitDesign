@@ -2201,11 +2201,11 @@ b {
         flex-direction: column;
         position      : relative;
         background    : none;
-        width         : auto;
         top           : -415px;
-        left          : auto;
         margin        : auto;
+        display       : flex;
         box-shadow    : none;
+        align-items   : center;
 
         img {
             position     : absolute;
