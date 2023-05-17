@@ -898,7 +898,7 @@ p {
 
     .sidebar-right {
         display           : flex;
-        position          : absolute;
+        position          : fixed;
         top               : 0;
         right             : 0;
         background        : rgba(155, 135, 132, 0.3);
@@ -979,7 +979,7 @@ p {
     top     : 0;
     left    : 0;
     width   : 100%;
-    height  : 100%;
+    height  : 584px;
     display : none;
     z-index : 999;
 }
