@@ -1214,17 +1214,14 @@ p {
 
 @media (max-width: 767px) {
   .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
-    position: relative;
     width: 292px;
     height: 72px;
-    top: -10px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
+    margin-right: 235px;
     line-height: 36px;
-    display: block;
-    margin-inline-start: -20px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4); } }
@@ -1606,7 +1603,7 @@ p {
   .imagesGroup {
     background-image: url("../assets/images/Rectangle 10.png"), url("../assets/images/Rectangle 11.png"), url("../assets/images/Rectangle 12.png"), url("../assets/images/Rectangle 8.png"), url("../assets/images/Rectangle 9.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: 190px, 260px, 285px, 110px, 145px;
+    background-position: 55%, 63%, 67%, 35%, 43%;
     background-size: 54px 85%, 12px 85%, 12px 85%, 12px 85%, 24px 85%;
     flex-wrap: wrap;
     position: relative;
@@ -1983,7 +1980,8 @@ p {
 .pricing-area {
   background-image: url("../assets/images/Sabrina ⁷ (@sabrinafelizitas) posted on Instagram • Oct 15, 2019 at 2_03pm UTC 1.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 1775px;
+  background-position: 1px 355px; }
 
 .pricing-area .title {
   position: relative;
@@ -2053,22 +2051,25 @@ p {
   color: #FFFFFF; }
 
 @media (max-width: 767px) {
-  .pricing-area .title {
-    top: 70px;
-    left: 0;
-    margin: auto;
-    position: relative; }
-  .pricing-area h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #9B8492;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center; }
+  .pricing-area {
+    background-size: 100% 50%;
+    background-position: 1px 631px; }
+    .pricing-area .title {
+      top: 70px;
+      left: 0;
+      margin: auto;
+      position: relative; }
+    .pricing-area h3 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #9B8492;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center; }
   .trust-img {
     padding-top: 170px; }
   .trust-img-div {
