@@ -897,8 +897,8 @@ p {
     }
 
     .sidebar-right {
-        display           : block;
-        position          : fixed;
+        display           : flex;
+        position          : absolute;
         top               : 0;
         right             : 0;
         background        : rgba(155, 135, 132, 0.3);
@@ -917,6 +917,8 @@ p {
         -ms-transition    : all 0.3s ease-out 0s;
         -o-transition     : all 0.3s ease-out 0s;
         transition        : all 0.3s ease-out 0s;
+        justify-content   : center;
+        align-items       : flex-start;
     }
 
     .sidebar-right.open {
@@ -2638,7 +2640,7 @@ p {
 @media (max-width: 767px) {
     .pricing-area {
         background-size    : 100% 50%;
-        background-position: 1px 631px;
+        background-position: 1px 590px;
 
         .title {
             top     : 70px;
@@ -2647,18 +2649,6 @@ p {
             position: relative;
         }
 
-        h3 {
-            font-family    : 'Poppins';
-            font-style     : normal;
-            font-weight    : 700;
-            font-size      : 20px;
-            line-height    : 30px;
-            color          : #9B8492;
-            display        : flex;
-            align-items    : center;
-            text-align     : center;
-            justify-content: center;
-        }
     }
 
     .trust-img {
@@ -2672,6 +2662,15 @@ p {
 
     }
 
+    .imgStaff {
+        margin-inline: 10px;
+
+        img {
+            width: 253px;
+        }
+
+    }
+
     .staffNames {
         font-family: 'Poppins';
         font-style : normal;
@@ -2679,6 +2678,7 @@ p {
         font-size  : 20px;
         line-height: 30px;
         color      : #9B8492;
+        margin     : 0;
     }
 
     .staffService {
@@ -2689,6 +2689,7 @@ p {
         line-height  : 24px;
         margin-inline: 40px;
         color        : #9B8492;
+        margin       : 0;
         width        : 253px;
         height       : 30px;
     }
