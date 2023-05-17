@@ -7,6 +7,14 @@ $(function () {
     $('.preloader').delay(500).fadeOut(500);
   });
 
+  $(window).on('scroll', function (event) {
+    var scroll = $(window).scrollTop();
+    if (scroll < 10) {
+      $('.navbar-area').removeClass('sticky');
+    } else {
+      $('.navbar-area').addClass('sticky');
+    }
+  });
 
   $('nav li.bg').on('click touchstart', function () {
     return true;

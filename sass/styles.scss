@@ -100,9 +100,6 @@ p {
     margin     : 0px;
 }
 
-b {
-    font-weight: bold;
-}
 
 .bg_cover {
     background-position: center center;
@@ -937,13 +934,11 @@ b {
     }
 
     .sidebar-right .sidebar-close .close {
-        font-size      : 24px;
-        position       : relative;
-        bottom         : 9px;
-        left           : 49px;
-        background-size: 100%;
-        border-radius  : 8px;
-        color          : transparent;
+        font-size: 24px;
+        position : relative;
+        bottom   : 9px;
+        left     : 49px;
+        color    : transparent;
     }
 }
 
@@ -1511,41 +1506,35 @@ b {
 }
 
 .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
-    font-family    : 'Poppins';
-    font-style     : normal;
-    font-weight    : 500;
-    font-size      : 48px;
-    line-height    : 72px;
-    display        : flex;
-    text-transform : uppercase;
-    width          : 942px;
-    color          : #FFFFFF;
-    text-shadow    : 0px 4px 20px rgba(0, 0, 0, 0.4);
-    justify-content: center;
-    position       : relative;
-    top            : 85px;
-    align-items    : center;
+    font-family   : 'Poppins';
+    font-style    : normal;
+    font-weight   : 500;
+    font-size     : 48px;
+    line-height   : 72px;
+    text-transform: uppercase;
+    width         : 942px;
+    color         : #FFFFFF;
+    text-shadow   : 0px 4px 20px rgba(0, 0, 0, 0.4);
+    margin        : auto;
 }
+
 
 @media (max-width: 767px) {
     .slider-area .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
-        position       : absolute;
-        width          : 292px;
-        height         : 72px;
-        left           : 15px;
-        top            : -75px;
-        font-family    : 'Poppins';
-        font-style     : normal;
-        font-weight    : 500;
-        font-size      : 24px;
-        line-height    : 36px;
-        display        : flex;
-        align-items    : center;
-        text-transform : uppercase;
-        color          : #FFFFFF;
-        text-shadow    : 0px 4px 20px rgba(0, 0, 0, 0.4);
-        flex-wrap      : wrap;
-        justify-content: flex-start;
+        position           : relative;
+        width              : 292px;
+        height             : 72px;
+        top                : -10px;
+        font-family        : 'Poppins';
+        font-style         : normal;
+        font-weight        : 500;
+        font-size          : 24px;
+        line-height        : 36px;
+        display            : block;
+        margin-inline-start: -20px;
+        text-transform     : uppercase;
+        color              : #FFFFFF;
+        text-shadow        : 0px 4px 20px rgba(0, 0, 0, 0.4);
     }
 }
 
@@ -1870,7 +1859,7 @@ b {
 
 @media (max-width: 767px) {
     .about-area {
-        padding-bottom: 0;
+        padding-bottom: 560px;
 
         .section-title {
             position     : relative;
@@ -2016,11 +2005,13 @@ b {
 
 @media (max-width: 767px) {
     .portfolio-area {
-        padding-top: 535px;
-        background : none
+        background: none
     }
 
+    .portfolio-container {}
+
     .portfolio-content {
+
         .title {
             top     : -675px;
             left    : auto;
@@ -2043,12 +2034,41 @@ b {
     }
 
     .imagesGroup {
+        background-image: url('../assets/images/Rectangle\ 10.png'), url('../assets/images/Rectangle\ 11.png'), url('../assets/images/Rectangle\ 12.png'), url('../assets/images/Rectangle\ 8.png'), url('../assets/images/Rectangle\ 9.png');
+        background-repeat: no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat;
+        background-position: 190px,
+            260px,
+            285px,
+            110px,
+            145px;
+        background-size: 54px 85%,
+            12px 85%,
+            12px 85%,
+            12px 85%,
+            24px 85%;
         flex-wrap: wrap;
         position : relative;
         top      : -620px;
         margin   : auto;
+
+        .imagesGroup img {
+            padding   : 20px;
+            margin-top: 32px;
+        }
     }
 
+    .imageInn {
+        width: 265px;
+    }
+
+    .imgBox:hover .hoverImage {
+        display: none;
+    }
 }
 
 
@@ -2170,9 +2190,6 @@ b {
 }
 
 @media (max-width: 767px) {
-    .services-area {
-        margin-top: 1415px;
-    }
 
     .services-content {
         .title {
@@ -2201,21 +2218,20 @@ b {
     .imagesGroupServices {
         position       : relative;
         background     : none;
-        top            : -445px;
-        margin-left    : -30px;
+        top            : -390px;
+        margin         : auto;
         display        : flex;
         box-shadow     : none;
         flex-wrap      : wrap;
-        justify-content: center;
         align-items    : center;
-        align-content  : flex-start;
-
+        align-content  : center;
+        justify-content: center;
 
         img {
             position     : relative;
             float        : left;
-            top          : -90px;
-            margin-left  : -35px;
+            top          : -55px;
+            margin-left  : 24px;
             background   : #F1EFED;
             border       : 3px solid #A6856A;
             box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2227,8 +2243,8 @@ b {
 
         .comunicacion {
             float       : right;
-            margin-right: -15px;
-            margin-top  : -45px;
+            margin-right: 30px;
+            top         : -130px;
         }
 
 
@@ -2239,8 +2255,8 @@ b {
         position     : relative;
         box-sizing   : border-box;
         width        : 347px;
+        margin-right : 50px;
         height       : 131px;
-        margin       : auto;
         background   : #A6856A;
         box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
         margin-top   : 85px;
@@ -2256,16 +2272,22 @@ b {
     }
 
     .textServices {
-        display    : block;
-        font-family: 'Poppins';
-        font-style : normal;
-        font-weight: 500;
-        font-size  : 16px;
-        line-height: 24px;
-        top        : 30px;
-        color      : #F1EFED;
-        position   : relative;
+        display      : block;
+        font-family  : 'Poppins';
+        font-style   : normal;
+        font-weight  : 500;
+        font-size    : 16px;
+        line-height  : 24px;
+        top          : 30px;
+        color        : #F1EFED;
+        position     : relative;
+        float        : right;
+        padding-right: 20px;
+    }
 
+    .cmText {
+        float       : left;
+        padding-left: 20px;
     }
 
     .btnHome {
