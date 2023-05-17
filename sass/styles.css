@@ -1603,7 +1603,7 @@ p {
   .imagesGroup {
     background-image: url("../assets/images/Rectangle 10.png"), url("../assets/images/Rectangle 11.png"), url("../assets/images/Rectangle 12.png"), url("../assets/images/Rectangle 8.png"), url("../assets/images/Rectangle 9.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: 55%, 63%, 67%, 35%, 43%;
+    background-position: 55%, 65%, 70%, 41%, 31%;
     background-size: 54px 85%, 12px 85%, 12px 85%, 12px 85%, 24px 85%;
     flex-wrap: wrap;
     position: relative;
