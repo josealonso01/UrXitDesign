@@ -2106,9 +2106,6 @@ p {
     width        : 1323px;
     height       : 487px;
 
-    img {
-        padding: 10px;
-    }
 
 }
 
@@ -2141,6 +2138,10 @@ p {
     left    : 0;
     top     : 0;
     display : none;
+    img{
+        width: 100%;
+    height: 100%;
+    }
 
 }
 
@@ -2636,6 +2637,32 @@ p {
 
 }
 
+
+.imgBoxStaff {
+    position  : relative;
+    box-sizing: border-box;
+
+}
+
+.imageInnStaff {
+    img {
+        position: relative;
+    }
+}
+
+
+.imgBoxStaff .hoverImageStaff {
+        position: absolute;
+    left    : -15px;
+    top     : -20px;
+    display : none;
+    width   : 342px;
+    height  : 464px;
+}
+
+.imgBoxStaff:hover .hoverImageStaff {
+    display: block;
+}
 
 @media (max-width: 767px) {
     .pricing-area {
