@@ -13,5 +13,8 @@
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "i18next": "^22.5.0"
   }
 }
