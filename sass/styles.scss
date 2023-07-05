@@ -897,6 +897,7 @@ p {
     }
 
     .sidebar-right {
+        overflow-x: hidden;
         position          : fixed;
         top               : 0;
         right             : 0;
