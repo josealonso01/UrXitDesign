@@ -802,7 +802,7 @@ p {
 
 @media (max-width: 767px) {
     body {
-        width: 100%;
+        width: 101%;
     }
 
     .navbar-area {
@@ -900,7 +900,8 @@ p {
         overflow-x: hidden;
         position          : fixed;
         top               : 0;
-        right             : 0;
+        right: 0;
+        margin-right: 15px;
         display           : block;
         background        : rgba(155, 135, 132, 0.3);
         box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.25);
