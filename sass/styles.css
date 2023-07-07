@@ -641,7 +641,8 @@ p {
 
 @media (max-width: 767px) {
   body {
-    width: 101%; }
+    overflow-x: hidden;
+    width: 100%; }
   .navbar-area {
     box-shadow: none;
     width: 100%;
