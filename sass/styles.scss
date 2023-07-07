@@ -803,7 +803,7 @@ p {
 @media (max-width: 767px) {
     body {
         overflow-x: hidden;
-        width: 100%;
+        width     : 100%;
     }
 
     .navbar-area {
@@ -898,11 +898,11 @@ p {
     }
 
     .sidebar-right {
-        overflow-x: hidden;
+        overflow-x        : hidden;
         position          : fixed;
         top               : 0;
-        right: 0;
-        margin-right: 15px;
+        right             : 0;
+        margin-right      : 15px;
         display           : block;
         background        : rgba(155, 135, 132, 0.3);
         box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -922,6 +922,8 @@ p {
         -ms-transform    : translateX(0);
         -o-transform     : translateX(0);
         transform        : translateX(0);
+        overflow         : hidden;
+        margin-right     : 15px;
     }
 
     .sidebar-right .sidebar-close {
@@ -937,6 +939,19 @@ p {
         left     : 0px;
         color    : transparent;
     }
+    .overlay-right {
+    position: fixed;
+    top     : 0;
+    left    : 0;
+    width   : 100%;
+    height  : 584px;
+    display : none;
+    z-index : 999;
+}
+
+.overlay-right.open {
+    display: block;
+}
 }
 
 
@@ -969,19 +984,7 @@ p {
 }
 
 
-.overlay-right {
-    position: fixed;
-    top     : 0;
-    left    : 0;
-    width   : 100%;
-    height  : 584px;
-    display : none;
-    z-index : 999;
-}
 
-.overlay-right.open {
-    display: block;
-}
 
 
 .navbar-area .navbar .navbar-nav .nav-item a {

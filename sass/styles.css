@@ -733,7 +733,9 @@ p {
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
-    transform: translateX(0); }
+    transform: translateX(0);
+    overflow: hidden;
+    margin-right: 15px; }
   .sidebar-right .sidebar-close {
     position: absolute;
     top: 30px;
@@ -743,7 +745,17 @@ p {
     position: relative;
     bottom: 9px;
     left: 0px;
-    color: transparent; } }
+    color: transparent; }
+  .overlay-right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 584px;
+    display: none;
+    z-index: 999; }
+  .overlay-right.open {
+    display: block; } }
 
 .sidebar-right .sidebar-close .close:hover {
   opacity: inherit; }
@@ -768,18 +780,6 @@ p {
   position: relative;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
-
-.overlay-right {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 584px;
-  display: none;
-  z-index: 999; }
-
-.overlay-right.open {
-  display: block; }
 
 .navbar-area .navbar .navbar-nav .nav-item a {
   display: none;
